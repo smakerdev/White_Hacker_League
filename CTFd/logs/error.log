@@ -1,0 +1,1409 @@
+[2017-08-24 01:24:43 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 01:24:43 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 01:24:43 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 01:24:43 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 01:25:19 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 01:25:19 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 01:25:19 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 01:25:19 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 01:25:40 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 01:25:40 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 01:25:40 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 01:25:40 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 01:29:20 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 01:29:20 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 01:29:20 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 01:29:20 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 01:29:51 +0000] [6] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 01:29:51 +0000] [6] [INFO] Listening at: http://0.0.0.0:8000 (6)
+[2017-08-24 01:29:51 +0000] [6] [INFO] Using worker: sync
+[2017-08-24 01:29:51 +0000] [16] [INFO] Booting worker with pid: 16
+[2017-08-24 01:31:36 +0000] [6] [CRITICAL] WORKER TIMEOUT (pid:16)
+[2017-08-24 01:31:36 +0000] [16] [INFO] Worker exiting (pid: 16)
+[2017-08-24 01:31:36 +0000] [29] [INFO] Booting worker with pid: 29
+[2017-08-24 01:44:17 +0000] [6] [CRITICAL] WORKER TIMEOUT (pid:29)
+[2017-08-24 01:44:17 +0000] [29] [INFO] Worker exiting (pid: 29)
+[2017-08-24 01:44:17 +0000] [42] [INFO] Booting worker with pid: 42
+[2017-08-24 01:53:33 +0000] [6] [CRITICAL] WORKER TIMEOUT (pid:42)
+[2017-08-24 01:53:33 +0000] [42] [INFO] Worker exiting (pid: 42)
+[2017-08-24 01:53:34 +0000] [55] [INFO] Booting worker with pid: 55
+[2017-08-24 01:57:52 +0000] [6] [CRITICAL] WORKER TIMEOUT (pid:55)
+[2017-08-24 01:57:52 +0000] [55] [INFO] Worker exiting (pid: 55)
+[2017-08-24 01:57:53 +0000] [68] [INFO] Booting worker with pid: 68
+[2017-08-24 02:12:12 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 02:12:12 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 02:12:12 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 02:12:12 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 02:14:43 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 02:14:43 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 02:14:43 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 02:14:43 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 02:26:47 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:15)
+[2017-08-24 02:26:47 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-24 02:26:47 +0000] [40] [INFO] Booting worker with pid: 40
+[2017-08-24 02:27:18 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:40)
+[2017-08-24 02:27:18 +0000] [40] [INFO] Worker exiting (pid: 40)
+[2017-08-24 02:27:18 +0000] [53] [INFO] Booting worker with pid: 53
+[2017-08-24 02:28:48 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 02:28:48 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 02:28:48 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 02:28:48 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 02:31:18,268] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/CTFd/CTFd/views.py", line 115, in static_html
+    return render_template('page.html', content=markdown(page.html))
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: page.html
+[2017-08-24 02:31:18 +0000] [15] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1547, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/opt/CTFd/CTFd/utils.py", line 90, in general_error
+    return render_template('errors/500.html'), 500
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: errors/500.html
+[2017-08-24 02:31:18,312] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/CTFd/CTFd/views.py", line 115, in static_html
+    return render_template('page.html', content=markdown(page.html))
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: page.html
+[2017-08-24 02:31:18 +0000] [15] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1547, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/opt/CTFd/CTFd/utils.py", line 90, in general_error
+    return render_template('errors/500.html'), 500
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: errors/500.html
+[2017-08-24 02:31:18,341] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/CTFd/CTFd/views.py", line 115, in static_html
+    return render_template('page.html', content=markdown(page.html))
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: page.html
+[2017-08-24 02:31:18 +0000] [15] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1547, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/opt/CTFd/CTFd/utils.py", line 90, in general_error
+    return render_template('errors/500.html'), 500
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: errors/500.html
+[2017-08-24 02:31:21,315] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/CTFd/CTFd/views.py", line 115, in static_html
+    return render_template('page.html', content=markdown(page.html))
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: page.html
+[2017-08-24 02:31:21 +0000] [15] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1547, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/opt/CTFd/CTFd/utils.py", line 90, in general_error
+    return render_template('errors/500.html'), 500
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: errors/500.html
+[2017-08-24 02:31:21,354] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/CTFd/CTFd/views.py", line 115, in static_html
+    return render_template('page.html', content=markdown(page.html))
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: page.html
+[2017-08-24 02:31:21 +0000] [15] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1547, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/opt/CTFd/CTFd/utils.py", line 90, in general_error
+    return render_template('errors/500.html'), 500
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: errors/500.html
+[2017-08-24 02:31:21,394] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/CTFd/CTFd/views.py", line 115, in static_html
+    return render_template('page.html', content=markdown(page.html))
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: page.html
+[2017-08-24 02:31:21 +0000] [15] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1547, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/opt/CTFd/CTFd/utils.py", line 90, in general_error
+    return render_template('errors/500.html'), 500
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: errors/500.html
+[2017-08-24 02:31:23,056] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/CTFd/CTFd/views.py", line 115, in static_html
+    return render_template('page.html', content=markdown(page.html))
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: page.html
+[2017-08-24 02:31:23 +0000] [15] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1547, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/opt/CTFd/CTFd/utils.py", line 90, in general_error
+    return render_template('errors/500.html'), 500
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: errors/500.html
+[2017-08-24 02:31:23,156] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/CTFd/CTFd/views.py", line 115, in static_html
+    return render_template('page.html', content=markdown(page.html))
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: page.html
+[2017-08-24 02:31:23 +0000] [15] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1547, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/opt/CTFd/CTFd/utils.py", line 90, in general_error
+    return render_template('errors/500.html'), 500
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: errors/500.html
+[2017-08-24 02:31:23,209] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/opt/CTFd/CTFd/views.py", line 115, in static_html
+    return render_template('page.html', content=markdown(page.html))
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: page.html
+[2017-08-24 02:31:23 +0000] [15] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1547, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "/opt/CTFd/CTFd/utils.py", line 90, in general_error
+    return render_template('errors/500.html'), 500
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: errors/500.html
+[2017-08-24 02:36:44 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:15)
+[2017-08-24 02:36:44 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-24 02:36:45 +0000] [28] [INFO] Booting worker with pid: 28
+[2017-08-24 02:39:57 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:28)
+[2017-08-24 02:39:57 +0000] [28] [INFO] Worker exiting (pid: 28)
+[2017-08-24 02:39:57 +0000] [41] [INFO] Booting worker with pid: 41
+[2017-08-24 03:27:53 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:41)
+[2017-08-24 03:27:53 +0000] [41] [INFO] Worker exiting (pid: 41)
+[2017-08-24 03:27:53 +0000] [54] [INFO] Booting worker with pid: 54
+[2017-08-24 03:47:23 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:54)
+[2017-08-24 03:47:23 +0000] [54] [INFO] Worker exiting (pid: 54)
+[2017-08-24 03:47:23 +0000] [67] [INFO] Booting worker with pid: 67
+[2017-08-24 03:48:56 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 03:48:56 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 03:48:56 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 03:48:56 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 03:49:30 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 03:49:30 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 03:49:30 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 03:49:30 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 03:49:36 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 03:49:36 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 03:49:36 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 03:49:36 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 03:49:39 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 03:49:39 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 03:49:39 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 03:49:39 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 03:51:05 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:15)
+[2017-08-24 03:51:05 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-24 03:51:05 +0000] [28] [INFO] Booting worker with pid: 28
+[2017-08-24 03:54:42 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:28)
+[2017-08-24 03:54:42 +0000] [28] [INFO] Worker exiting (pid: 28)
+[2017-08-24 03:54:42 +0000] [41] [INFO] Booting worker with pid: 41
+[2017-08-24 03:58:03 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:41)
+[2017-08-24 03:58:03 +0000] [41] [INFO] Worker exiting (pid: 41)
+[2017-08-24 03:58:03 +0000] [54] [INFO] Booting worker with pid: 54
+[2017-08-24 04:08:58 +0000] [7] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 04:08:58 +0000] [7] [INFO] Listening at: http://0.0.0.0:8000 (7)
+[2017-08-24 04:08:58 +0000] [7] [INFO] Using worker: sync
+[2017-08-24 04:08:58 +0000] [17] [INFO] Booting worker with pid: 17
+[2017-08-24 04:20:33 +0000] [7] [CRITICAL] WORKER TIMEOUT (pid:17)
+[2017-08-24 04:20:33 +0000] [17] [INFO] Worker exiting (pid: 17)
+[2017-08-24 04:20:33 +0000] [30] [INFO] Booting worker with pid: 30
+[2017-08-24 04:21:04 +0000] [7] [CRITICAL] WORKER TIMEOUT (pid:30)
+[2017-08-24 04:21:04 +0000] [30] [INFO] Worker exiting (pid: 30)
+[2017-08-24 04:21:04 +0000] [43] [INFO] Booting worker with pid: 43
+[2017-08-24 04:34:43 +0000] [7] [CRITICAL] WORKER TIMEOUT (pid:43)
+[2017-08-24 04:34:42 +0000] [43] [INFO] Worker exiting (pid: 43)
+[2017-08-24 04:34:42 +0000] [56] [INFO] Booting worker with pid: 56
+[2017-08-24 04:43:09 +0000] [7] [CRITICAL] WORKER TIMEOUT (pid:56)
+[2017-08-24 04:43:09 +0000] [56] [INFO] Worker exiting (pid: 56)
+[2017-08-24 04:43:09 +0000] [69] [INFO] Booting worker with pid: 69
+[2017-08-24 04:44:25 +0000] [7] [CRITICAL] WORKER TIMEOUT (pid:69)
+[2017-08-24 04:44:25 +0000] [69] [INFO] Worker exiting (pid: 69)
+[2017-08-24 04:44:25 +0000] [82] [INFO] Booting worker with pid: 82
+[2017-08-24 04:44:57 +0000] [7] [CRITICAL] WORKER TIMEOUT (pid:82)
+[2017-08-24 04:44:57 +0000] [82] [INFO] Worker exiting (pid: 82)
+[2017-08-24 04:44:57 +0000] [95] [INFO] Booting worker with pid: 95
+[2017-08-24 04:49:23 +0000] [7] [CRITICAL] WORKER TIMEOUT (pid:95)
+[2017-08-24 04:49:23 +0000] [95] [INFO] Worker exiting (pid: 95)
+[2017-08-24 04:49:23 +0000] [108] [INFO] Booting worker with pid: 108
+[2017-08-24 04:49:54 +0000] [7] [CRITICAL] WORKER TIMEOUT (pid:108)
+[2017-08-24 04:49:54 +0000] [108] [INFO] Worker exiting (pid: 108)
+[2017-08-24 04:49:55 +0000] [121] [INFO] Booting worker with pid: 121
+[2017-08-24 04:50:32 +0000] [7] [CRITICAL] WORKER TIMEOUT (pid:121)
+[2017-08-24 04:50:32 +0000] [121] [INFO] Worker exiting (pid: 121)
+[2017-08-24 04:50:32 +0000] [134] [INFO] Booting worker with pid: 134
+[2017-08-24 04:54:25 +0000] [7] [CRITICAL] WORKER TIMEOUT (pid:134)
+[2017-08-24 04:54:25 +0000] [134] [INFO] Worker exiting (pid: 134)
+[2017-08-24 04:54:25 +0000] [147] [INFO] Booting worker with pid: 147
+[2017-08-24 05:31:44 +0000] [7] [CRITICAL] WORKER TIMEOUT (pid:147)
+[2017-08-24 05:31:44 +0000] [147] [INFO] Worker exiting (pid: 147)
+[2017-08-24 05:31:44 +0000] [160] [INFO] Booting worker with pid: 160
+[2017-08-24 06:35:28 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-24 06:35:28 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-24 06:35:28 +0000] [5] [INFO] Using worker: sync
+[2017-08-24 06:35:28 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-24 07:37:34 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:15)
+[2017-08-24 07:37:34 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-24 07:37:35 +0000] [28] [INFO] Booting worker with pid: 28
+[2017-08-24 08:43:38 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:28)
+[2017-08-24 08:43:38 +0000] [28] [INFO] Worker exiting (pid: 28)
+[2017-08-24 08:43:38 +0000] [41] [INFO] Booting worker with pid: 41
+[2017-08-24 08:54:04 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:41)
+[2017-08-24 08:54:04 +0000] [41] [INFO] Worker exiting (pid: 41)
+[2017-08-24 08:54:04 +0000] [54] [INFO] Booting worker with pid: 54
+[2017-08-24 08:55:46 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:54)
+[2017-08-24 08:55:46 +0000] [54] [INFO] Worker exiting (pid: 54)
+[2017-08-24 08:55:46 +0000] [67] [INFO] Booting worker with pid: 67
+[2017-08-24 08:58:39 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:67)
+[2017-08-24 08:58:39 +0000] [67] [INFO] Worker exiting (pid: 67)
+[2017-08-24 08:58:39 +0000] [80] [INFO] Booting worker with pid: 80
+[2017-08-24 08:59:10 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:80)
+[2017-08-24 08:59:10 +0000] [80] [INFO] Worker exiting (pid: 80)
+[2017-08-24 08:59:50 +0000] [93] [INFO] Booting worker with pid: 93
+[2017-08-24 09:00:26 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:93)
+[2017-08-24 09:00:26 +0000] [93] [INFO] Worker exiting (pid: 93)
+[2017-08-24 09:00:26 +0000] [106] [INFO] Booting worker with pid: 106
+[2017-08-24 09:03:51 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:106)
+[2017-08-24 09:03:51 +0000] [106] [INFO] Worker exiting (pid: 106)
+[2017-08-24 09:03:51 +0000] [119] [INFO] Booting worker with pid: 119
+[2017-08-24 09:04:55 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:119)
+[2017-08-24 09:04:55 +0000] [119] [INFO] Worker exiting (pid: 119)
+[2017-08-24 09:04:55 +0000] [132] [INFO] Booting worker with pid: 132
+[2017-08-24 09:06:04 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:132)
+[2017-08-24 09:06:04 +0000] [132] [INFO] Worker exiting (pid: 132)
+[2017-08-24 09:06:04 +0000] [145] [INFO] Booting worker with pid: 145
+[2017-08-24 09:07:02 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:145)
+[2017-08-24 09:07:02 +0000] [145] [INFO] Worker exiting (pid: 145)
+[2017-08-24 09:07:02 +0000] [158] [INFO] Booting worker with pid: 158
+[2017-08-24 09:05:29 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:158)
+[2017-08-24 09:05:29 +0000] [158] [INFO] Worker exiting (pid: 158)
+[2017-08-24 09:05:29 +0000] [171] [INFO] Booting worker with pid: 171
+[2017-08-24 09:06:01 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:171)
+[2017-08-24 09:06:01 +0000] [171] [INFO] Worker exiting (pid: 171)
+[2017-08-24 09:06:01 +0000] [184] [INFO] Booting worker with pid: 184
+[2017-08-24 09:22:14 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:184)
+[2017-08-24 09:22:14 +0000] [184] [INFO] Worker exiting (pid: 184)
+[2017-08-24 09:22:14 +0000] [197] [INFO] Booting worker with pid: 197
+[2017-08-24 09:27:08 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:197)
+[2017-08-24 09:27:08 +0000] [197] [INFO] Worker exiting (pid: 197)
+[2017-08-24 09:27:08 +0000] [210] [INFO] Booting worker with pid: 210
+[2017-08-24 09:31:37 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:210)
+[2017-08-24 09:31:37 +0000] [210] [INFO] Worker exiting (pid: 210)
+[2017-08-24 09:31:37 +0000] [223] [INFO] Booting worker with pid: 223
+[2017-08-24 09:35:56 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:223)
+[2017-08-24 09:35:56 +0000] [223] [INFO] Worker exiting (pid: 223)
+[2017-08-24 09:35:57 +0000] [236] [INFO] Booting worker with pid: 236
+[2017-08-24 09:25:30 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:236)
+[2017-08-24 09:25:30 +0000] [236] [INFO] Worker exiting (pid: 236)
+[2017-08-24 09:25:30 +0000] [249] [INFO] Booting worker with pid: 249
+[2017-08-24 09:26:12 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:249)
+[2017-08-24 09:26:12 +0000] [249] [INFO] Worker exiting (pid: 249)
+[2017-08-24 09:26:12 +0000] [262] [INFO] Booting worker with pid: 262
+[2017-08-24 09:29:23 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:262)
+[2017-08-24 09:29:23 +0000] [262] [INFO] Worker exiting (pid: 262)
+[2017-08-24 09:29:23 +0000] [275] [INFO] Booting worker with pid: 275
+[2017-08-24 09:29:54 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:275)
+[2017-08-24 09:29:54 +0000] [275] [INFO] Worker exiting (pid: 275)
+[2017-08-24 09:29:54 +0000] [288] [INFO] Booting worker with pid: 288
+[2017-08-24 09:30:40 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:288)
+[2017-08-24 09:30:40 +0000] [288] [INFO] Worker exiting (pid: 288)
+[2017-08-24 09:30:40 +0000] [301] [INFO] Booting worker with pid: 301
+[2017-08-24 09:31:20 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:301)
+[2017-08-24 09:31:20 +0000] [301] [INFO] Worker exiting (pid: 301)
+[2017-08-24 09:31:20 +0000] [314] [INFO] Booting worker with pid: 314
+[2017-08-24 09:36:16 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:314)
+[2017-08-24 09:36:16 +0000] [314] [INFO] Worker exiting (pid: 314)
+[2017-08-24 09:36:16 +0000] [327] [INFO] Booting worker with pid: 327
+[2017-08-24 09:37:10 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:327)
+[2017-08-24 09:37:10 +0000] [327] [INFO] Worker exiting (pid: 327)
+[2017-08-24 09:37:10 +0000] [340] [INFO] Booting worker with pid: 340
+[2017-08-24 09:38:45 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:340)
+[2017-08-24 09:38:45 +0000] [340] [INFO] Worker exiting (pid: 340)
+[2017-08-24 09:38:46 +0000] [353] [INFO] Booting worker with pid: 353
+[2017-08-24 09:39:44 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:353)
+[2017-08-24 09:39:44 +0000] [353] [INFO] Worker exiting (pid: 353)
+[2017-08-24 09:39:44 +0000] [366] [INFO] Booting worker with pid: 366
+[2017-08-24 09:41:48 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:366)
+[2017-08-24 09:41:48 +0000] [366] [INFO] Worker exiting (pid: 366)
+[2017-08-24 09:41:48 +0000] [379] [INFO] Booting worker with pid: 379
+[2017-08-24 10:51:18 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:379)
+[2017-08-24 10:51:18 +0000] [379] [INFO] Worker exiting (pid: 379)
+[2017-08-24 10:51:19 +0000] [392] [INFO] Booting worker with pid: 392
+[2017-08-25 05:04:44 +0000] [6] [INFO] Starting gunicorn 19.7.0
+[2017-08-25 05:04:44 +0000] [6] [INFO] Listening at: http://0.0.0.0:8000 (6)
+[2017-08-25 05:04:44 +0000] [6] [INFO] Using worker: sync
+[2017-08-25 05:04:44 +0000] [16] [INFO] Booting worker with pid: 16
+[2017-08-25 06:20:20 +0000] [6] [INFO] Starting gunicorn 19.7.0
+[2017-08-25 06:20:20 +0000] [6] [INFO] Listening at: http://0.0.0.0:8000 (6)
+[2017-08-25 06:20:20 +0000] [6] [INFO] Using worker: sync
+[2017-08-25 06:20:20 +0000] [16] [INFO] Booting worker with pid: 16
+[2017-08-26 01:25:30 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-26 01:25:30 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-26 01:25:30 +0000] [5] [INFO] Using worker: sync
+[2017-08-26 01:25:30 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-26 01:56:00 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:15)
+[2017-08-26 01:56:00 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-26 01:56:00 +0000] [28] [INFO] Booting worker with pid: 28
+[2017-08-26 02:01:12 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:28)
+[2017-08-26 02:01:12 +0000] [28] [INFO] Worker exiting (pid: 28)
+[2017-08-26 02:01:12 +0000] [41] [INFO] Booting worker with pid: 41
+[2017-08-26 06:21:17 +0000] [6] [INFO] Starting gunicorn 19.7.0
+[2017-08-26 06:21:17 +0000] [6] [INFO] Listening at: http://0.0.0.0:8000 (6)
+[2017-08-26 06:21:17 +0000] [6] [INFO] Using worker: sync
+[2017-08-26 06:21:17 +0000] [16] [INFO] Booting worker with pid: 16
+[2017-08-26 06:22:04 +0000] [6] [CRITICAL] WORKER TIMEOUT (pid:16)
+[2017-08-26 06:22:04 +0000] [16] [INFO] Worker exiting (pid: 16)
+[2017-08-26 06:22:04 +0000] [29] [INFO] Booting worker with pid: 29
+[2017-08-27 01:24:35 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 01:24:35 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 01:24:35 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 01:24:35 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 01:25:29 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:15)
+[2017-08-27 01:25:29 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 01:25:29 +0000] [28] [INFO] Booting worker with pid: 28
+[2017-08-27 01:36:57 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 01:36:57 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 01:36:57 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 01:36:57 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 01:36:58 +0000] [15] [ERROR] expected an indented block (__init__.py, line 26)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/gamble/__init__.py", line 26
+    
+    ^
+IndentationError: expected an indented block
+[2017-08-27 01:36:58 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2017-08-27 01:36:58 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 01:36:58 +0000] [5] [INFO] Shutting down: Master
+[2017-08-27 01:36:58 +0000] [5] [INFO] Reason: Worker failed to boot.
+[2017-08-27 04:30:47 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 04:30:47 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 04:30:47 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 04:30:47 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 04:30:47 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named discovery
+[2017-08-27 04:30:47 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 04:30:47 +0000] [5] [INFO] Shutting down: Master
+[2017-08-27 04:30:47 +0000] [5] [INFO] Reason: Worker failed to boot.
+[2017-08-27 04:31:01 +0000] [8] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 04:31:01 +0000] [8] [INFO] Listening at: http://0.0.0.0:8000 (8)
+[2017-08-27 04:31:01 +0000] [8] [INFO] Using worker: sync
+[2017-08-27 04:31:01 +0000] [18] [INFO] Booting worker with pid: 18
+[2017-08-27 04:31:02 +0000] [18] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named discovery
+[2017-08-27 04:31:02 +0000] [18] [INFO] Worker exiting (pid: 18)
+[2017-08-27 04:31:02 +0000] [8] [INFO] Shutting down: Master
+[2017-08-27 04:31:02 +0000] [8] [INFO] Reason: Worker failed to boot.
+[2017-08-27 04:31:05 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 04:31:05 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 04:31:05 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 04:31:05 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 04:31:05 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named discovery
+[2017-08-27 04:31:05 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 04:31:05 +0000] [5] [INFO] Shutting down: Master
+[2017-08-27 04:31:05 +0000] [5] [INFO] Reason: Worker failed to boot.
+[2017-08-27 04:33:44 +0000] [6] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 04:33:44 +0000] [6] [INFO] Listening at: http://0.0.0.0:8000 (6)
+[2017-08-27 04:33:44 +0000] [6] [INFO] Using worker: sync
+[2017-08-27 04:33:44 +0000] [16] [INFO] Booting worker with pid: 16
+[2017-08-27 04:33:45 +0000] [16] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/discovery/__init__.py", line 9, in <module>
+    from CTFd.utils import admins_only, is_admin, unix_time, get_config, \
+ImportError: cannot import name create_image
+[2017-08-27 04:33:45 +0000] [16] [INFO] Worker exiting (pid: 16)
+[2017-08-27 04:33:45 +0000] [6] [INFO] Shutting down: Master
+[2017-08-27 04:33:45 +0000] [6] [INFO] Reason: Worker failed to boot.
+[2017-08-27 04:34:05 +0000] [6] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 04:34:05 +0000] [6] [INFO] Listening at: http://0.0.0.0:8000 (6)
+[2017-08-27 04:34:05 +0000] [6] [INFO] Using worker: sync
+[2017-08-27 04:34:05 +0000] [16] [INFO] Booting worker with pid: 16
+[2017-08-27 04:34:06 +0000] [16] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/discovery/__init__.py", line 9, in <module>
+    from CTFd.utils import admins_only, is_admin, unix_time, get_config, \
+ImportError: cannot import name create_image
+[2017-08-27 04:34:06 +0000] [16] [INFO] Worker exiting (pid: 16)
+[2017-08-27 04:34:06 +0000] [6] [INFO] Shutting down: Master
+[2017-08-27 04:34:06 +0000] [6] [INFO] Reason: Worker failed to boot.
+[2017-08-27 04:34:20 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 04:34:20 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 04:34:20 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 04:34:20 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 04:34:21 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/discovery/__init__.py", line 9, in <module>
+    from CTFd.utils import admins_only, is_admin, unix_time, get_config, \
+ImportError: cannot import name create_image
+[2017-08-27 04:34:21 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 04:34:21 +0000] [5] [INFO] Shutting down: Master
+[2017-08-27 04:34:21 +0000] [5] [INFO] Reason: Worker failed to boot.
+[2017-08-27 04:34:23 +0000] [6] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 04:34:23 +0000] [6] [INFO] Listening at: http://0.0.0.0:8000 (6)
+[2017-08-27 04:34:23 +0000] [6] [INFO] Using worker: sync
+[2017-08-27 04:34:23 +0000] [16] [INFO] Booting worker with pid: 16
+[2017-08-27 04:34:24 +0000] [16] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/discovery/__init__.py", line 9, in <module>
+    from CTFd.utils import admins_only, is_admin, unix_time, get_config, \
+ImportError: cannot import name create_image
+[2017-08-27 04:34:24 +0000] [16] [INFO] Worker exiting (pid: 16)
+[2017-08-27 04:34:24 +0000] [6] [INFO] Shutting down: Master
+[2017-08-27 04:34:24 +0000] [6] [INFO] Reason: Worker failed to boot.
+[2017-08-27 04:34:34 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 04:34:34 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 04:34:34 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 04:34:34 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 04:34:35 +0000] [15] [ERROR] expected an indented block (__init__.py, line 18)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/gamble/__init__.py", line 18
+    def load(app):
+      ^
+IndentationError: expected an indented block
+[2017-08-27 04:34:35 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2017-08-27 04:34:35 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 04:34:35 +0000] [5] [INFO] Shutting down: Master
+[2017-08-27 04:34:35 +0000] [5] [INFO] Reason: Worker failed to boot.
+[2017-08-27 04:34:38 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 04:34:38 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 04:34:38 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 04:34:38 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 04:34:39 +0000] [15] [ERROR] expected an indented block (__init__.py, line 18)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/gamble/__init__.py", line 18
+    def load(app):
+      ^
+IndentationError: expected an indented block
+[2017-08-27 04:34:39 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2017-08-27 04:34:39 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 04:34:39 +0000] [5] [INFO] Shutting down: Master
+[2017-08-27 04:34:39 +0000] [5] [INFO] Reason: Worker failed to boot.
+[2017-08-27 05:52:30 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 05:52:30 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 05:52:30 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 05:52:30 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 05:52:31 +0000] [15] [ERROR] expected an indented block (__init__.py, line 18)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/gamble/__init__.py", line 18
+    def load(app):
+      ^
+IndentationError: expected an indented block
+[2017-08-27 05:52:31 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2017-08-27 05:52:31 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 05:52:31 +0000] [5] [INFO] Shutting down: Master
+[2017-08-27 05:52:31 +0000] [5] [INFO] Reason: Worker failed to boot.
+[2017-08-27 05:52:39 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 05:52:39 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 05:52:39 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 05:52:39 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 05:52:40 +0000] [15] [ERROR] expected an indented block (__init__.py, line 18)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/gamble/__init__.py", line 18
+    def load(app):
+      ^
+IndentationError: expected an indented block
+[2017-08-27 05:52:40 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2017-08-27 05:52:40 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 05:52:40 +0000] [5] [INFO] Shutting down: Master
+[2017-08-27 05:52:40 +0000] [5] [INFO] Reason: Worker failed to boot.
+[2017-08-27 05:52:56 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 05:52:56 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 05:52:56 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 05:52:56 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 05:52:57 +0000] [15] [ERROR] expected an indented block (__init__.py, line 18)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/gamble/__init__.py", line 18
+    def load(app):
+      ^
+IndentationError: expected an indented block
+[2017-08-27 05:52:57 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2017-08-27 05:52:57 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 05:52:57 +0000] [5] [INFO] Shutting down: Master
+[2017-08-27 05:52:57 +0000] [5] [INFO] Reason: Worker failed to boot.
+[2017-08-27 05:53:18 +0000] [6] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 05:53:18 +0000] [6] [INFO] Listening at: http://0.0.0.0:8000 (6)
+[2017-08-27 05:53:18 +0000] [6] [INFO] Using worker: sync
+[2017-08-27 05:53:18 +0000] [16] [INFO] Booting worker with pid: 16
+[2017-08-27 06:09:39 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 06:09:39 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 06:09:39 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 06:09:39 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 06:09:40 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/gamble/__init__.py", line 2, in <module>
+    from flask_restful import reqparse
+ImportError: No module named flask_restful
+[2017-08-27 06:09:40 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 06:09:40 +0000] [5] [INFO] Shutting down: Master
+[2017-08-27 06:09:40 +0000] [5] [INFO] Reason: Worker failed to boot.
+[2017-08-27 06:10:45 +0000] [7] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 06:10:45 +0000] [7] [INFO] Listening at: http://0.0.0.0:8000 (7)
+[2017-08-27 06:10:45 +0000] [7] [INFO] Using worker: sync
+[2017-08-27 06:10:45 +0000] [17] [INFO] Booting worker with pid: 17
+[2017-08-27 06:10:46 +0000] [17] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/gamble/__init__.py", line 2, in <module>
+    from flask_restful import reqparse
+ImportError: No module named flask_restful
+[2017-08-27 06:10:46 +0000] [17] [INFO] Worker exiting (pid: 17)
+[2017-08-27 06:10:46 +0000] [7] [INFO] Shutting down: Master
+[2017-08-27 06:10:46 +0000] [7] [INFO] Reason: Worker failed to boot.
+[2017-08-27 06:12:19 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 06:12:19 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 06:12:19 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 06:12:19 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 06:12:19 +0000] [15] [ERROR] invalid syntax (__init__.py, line 21)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/gamble/__init__.py", line 21
+    return render_template('page.html', content="<h1>" + % code + "</h1>")
+                                                         ^
+SyntaxError: invalid syntax
+[2017-08-27 06:12:19 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2017-08-27 06:12:19 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 06:12:19 +0000] [5] [INFO] Shutting down: Master
+[2017-08-27 06:12:19 +0000] [5] [INFO] Reason: Worker failed to boot.
+[2017-08-27 13:37:13 +0000] [6] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 13:37:13 +0000] [6] [INFO] Listening at: http://0.0.0.0:8000 (6)
+[2017-08-27 13:37:13 +0000] [6] [INFO] Using worker: sync
+[2017-08-27 13:37:13 +0000] [16] [INFO] Booting worker with pid: 16
+[2017-08-27 13:37:14 +0000] [16] [ERROR] invalid syntax (__init__.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 388, in import_app
+    app = eval(obj, vars(mod))
+  File "<string>", line 1, in <module>
+  File "/opt/CTFd/CTFd/__init__.py", line 138, in create_app
+    init_plugins(app)
+  File "/opt/CTFd/CTFd/plugins/__init__.py", line 13, in init_plugins
+    module = importlib.import_module(module, package='CTFd.plugins')
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/CTFd/CTFd/plugins/gamble/__init__.py", line 20
+    return render_template('page.html', content="<h1>" + % code + "</h1>")
+                                                         ^
+SyntaxError: invalid syntax
+[2017-08-27 13:37:14 +0000] [16] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2017-08-27 13:37:14 +0000] [16] [INFO] Worker exiting (pid: 16)
+[2017-08-27 13:37:14 +0000] [6] [INFO] Shutting down: Master
+[2017-08-27 13:37:14 +0000] [6] [INFO] Reason: Worker failed to boot.
+[2017-08-27 13:37:51 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 13:37:51 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 13:37:51 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 13:37:51 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 13:43:36 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 13:43:36 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 13:43:36 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 13:43:36 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 13:51:50 +0000] [5] [INFO] Starting gunicorn 19.7.0
+[2017-08-27 13:51:50 +0000] [5] [INFO] Listening at: http://0.0.0.0:8000 (5)
+[2017-08-27 13:51:50 +0000] [5] [INFO] Using worker: sync
+[2017-08-27 13:51:50 +0000] [15] [INFO] Booting worker with pid: 15
+[2017-08-27 13:52:24 +0000] [5] [CRITICAL] WORKER TIMEOUT (pid:15)
+[2017-08-27 13:52:24 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2017-08-27 13:52:24 +0000] [28] [INFO] Booting worker with pid: 28
