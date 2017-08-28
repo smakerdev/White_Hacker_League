@@ -1,5 +1,6 @@
 from CTFd.plugins.keys import get_key_class
-from CTFd.models import db, Keys
+from CTFd.models import db, Keys, Awards, Challenges, Gamble
+from flask import session
 
 
 class BaseChallenge(object):
@@ -16,6 +17,8 @@ class CTFdStandardChallenge(BaseChallenge):
         chal_keys = Keys.query.filter_by(chal=chal.id).all()
         for chal_key in chal_keys:
             if get_key_class(chal_key.key_type).compare(chal_key.flag, provided_key):
+                # Gamble(db.session.teamid, "Gamble Point", chal.value)
+                # Awards.gamble_point += Challenges.value
                 return True, 'Correct'
         return False, 'Incorrect'
 

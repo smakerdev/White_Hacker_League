@@ -27,7 +27,6 @@ def long2ip(ip_int):
 
 db = SQLAlchemy()
 
-
 class Pages(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     route = db.Column(db.String(80), unique=True)
@@ -47,16 +46,21 @@ class Challenges(db.Model):
     description = db.Column(db.Text)
     max_attempts = db.Column(db.Integer, default=0)
     value = db.Column(db.Integer)
+    #TODO: Why gamble_point field not found?
+    # gamble_point = db.Column(db.Integer)
     category = db.Column(db.String(80))
     type = db.Column(db.Integer)
     hidden = db.Column(db.Boolean)
-
+    
+    #TODO: __init__ Challenges Model gamble_point
+    # def __init__(self, name, description, value, category, type=0, gamble_point):
     def __init__(self, name, description, value, category, type=0):
         self.name = name
         self.description = description
         self.value = value
         self.category = category
         self.type = type
+        # self.gamble_point = gamble_point
         # self.flags = json.dumps(flags)
 
     def __repr__(self):
@@ -86,8 +90,6 @@ class Awards(db.Model):
     name = db.Column(db.String(80))
     description = db.Column(db.Text)
     date = db.Column(db.DateTime, default=datetime.datetime.utcnow)
-
-    gamble_point = db.Column(db.Integer)
 
     value = db.Column(db.Integer)
     category = db.Column(db.String(80))
@@ -172,7 +174,7 @@ class Teams(db.Model):
         team = db.session.query(Solves.teamid, score).join(Teams).join(Challenges).filter(Teams.id == self.id)
         award_score = db.func.sum(Awards.value).label('award_score')
         award = db.session.query(award_score).filter_by(teamid=self.id)
-
+        
         if not admin:
             freeze = Config.query.filter_by(key='freeze').first()
             if freeze and freeze.value:
@@ -188,6 +190,25 @@ class Teams(db.Model):
             return int(team.score or 0) + int(award.award_score or 0)
         elif team:
             return int(team.score or 0)
+        elif award:
+            return int(award.award_score or 0)
+        else:
+            return 0
+    
+    #TODO: make gamble point function
+    def gamble(self, admin=False):
+        point = db.func.sum(Challenges.gamble_point).label('point')
+        team = db.session.query(Solves.teamid, score).join(Teams).join(Challenges).filter(Teams.id == self.id)
+        award_score = db.func.sum(Awards.value).label('award_score')
+        award = db.session.query(award_score).filter_by(teamid=self.id)
+
+        team = team.group_by(Solves.teamid).first()
+        award = award.first()
+
+        # if team and award:
+        #     return int(team. or 0) + int(award.award_score or 0)
+        if team:
+            return int(team.gamble_point or 0)
         elif award:
             return int(award.award_score or 0)
         else:
@@ -318,3 +339,28 @@ class Config(db.Model):
     def __init__(self, key, value):
         self.key = key
         self.value = value
+
+
+class Gamble(db.Model):
+    __table_args__ = (db.UniqueConstraint('chalid', 'teamid'), {})
+    id = db.Column(db.Integer, primary_key=True)
+    chalid = db.Column(db.Integer, db.ForeignKey('challenges.id'))
+    teamid = db.Column(db.Integer, db.ForeignKey('teams.id'))    
+    name = db.Column(db.String(80))
+    description = db.Column(db.Text)
+    date = db.Column(db.DateTime, default=datetime.datetime.utcnow)
+
+    value = db.Column(db.Integer, default=200)
+    category = db.Column(db.String(80))
+    icon = db.Column(db.Text)
+
+    team = db.relationship('Teams', foreign_keys="Gamble.teamid", lazy='joined')
+    chal = db.relationship('Challenges', foreign_keys="Gamble.chalid", lazy='joined')
+
+    def __init__(self, teamid, chalid, value):
+        self.teamid = teamid
+        self.chalid = chalid
+        self.value = value
+
+    def __repr__(self):
+        return '<gamble {}, {}, {}, {}>'.format(self.teamid, self.chalid, self.value)

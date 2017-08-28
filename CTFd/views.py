@@ -6,7 +6,7 @@ from flask.helpers import safe_join
 from jinja2.exceptions import TemplateNotFound
 from passlib.hash import bcrypt_sha256
 
-from CTFd.models import db, Teams, Solves, Awards, Files, Pages
+from CTFd.models import db, Teams, Solves, Awards, Files, Pages, Gamble
 from CTFd.utils import cache, markdown
 from CTFd import utils
 
@@ -138,7 +138,8 @@ def team(teamid):
     user = Teams.query.filter_by(id=teamid).first_or_404()
     solves = Solves.query.filter_by(teamid=teamid)
     awards = Awards.query.filter_by(teamid=teamid)
-
+    gamble = Gamble.query.filter_by(teamid=teamid)
+    
     place = user.place()
     score = user.score()
 

@@ -6,7 +6,7 @@ import time
 from flask import render_template, request, redirect, jsonify, url_for, session, Blueprint
 from sqlalchemy.sql import or_
 
-from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks
+from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble
 from CTFd.plugins.keys import get_key_class
 from CTFd.plugins.challenges import get_chal_class
 
@@ -289,10 +289,18 @@ def chal(chalid):
             chal_class = get_chal_class(chal.type)
             status, message = chal_class.solve(chal, provided_key)
             if status:  # The challenge plugin says the input is right
+                # TODO: if auth flag success, add gamble point
                 if utils.ctftime():
+                    # name = str(chalid) + " challenge gamble point"
                     solve = Solves(teamid=session['id'], chalid=chalid, ip=utils.get_ip(), flag=provided_key)
+                    gamble = Gamble(teamid=session['id'], chalid=chalid, value=chal.value)
+
                     db.session.add(solve)
                     db.session.commit()
+
+                    db.session.add(gamble)
+                    db.session.commit()
+                    
                     db.session.close()
                 logger.info("[{0}] {1} submitted {2} with kpm {3} [CORRECT]".format(*data))
                 return jsonify({'status': 1, 'message': message})

@@ -17,17 +17,18 @@ Awards	../CTFd/admin/pages.py	/^from CTFd.models import db, Teams, Solves, Award
 Awards	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Awards	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Awards	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
-Awards	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:9
-Awards	../CTFd/models.py	/^class Awards(db.Model):$/;"	kind:class	line:83
-Awards	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:6
+Awards	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
+Awards	../CTFd/models.py	/^class Awards(db.Model):$/;"	kind:class	line:87
+Awards	../CTFd/plugins/challenges/__init__.py	/^from CTFd.models import db, Keys, Awards, Challenges, Gamble$/;"	kind:namespace	line:2
+Awards	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
 Awards	../CTFd/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges$/;"	kind:namespace	line:4
-Awards	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages$/;"	kind:namespace	line:9
+Awards	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages, Gamble$/;"	kind:namespace	line:9
 Awards	../populate.py	/^from CTFd.models import Teams, Solves, Challenges, WrongKeys, Keys, Files, Awards$/;"	kind:namespace	line:9
 BadSignature	../CTFd/auth.py	/^from itsdangerous import TimedSerializer, BadTimeSignature, Signer, BadSignature$/;"	kind:namespace	line:7
 BadSignature	../CTFd/utils.py	/^from itsdangerous import TimedSerializer, BadTimeSignature, Signer, BadSignature$/;"	kind:namespace	line:27
 BadTimeSignature	../CTFd/auth.py	/^from itsdangerous import TimedSerializer, BadTimeSignature, Signer, BadSignature$/;"	kind:namespace	line:7
 BadTimeSignature	../CTFd/utils.py	/^from itsdangerous import TimedSerializer, BadTimeSignature, Signer, BadSignature$/;"	kind:namespace	line:27
-BaseChallenge	../CTFd/plugins/challenges/__init__.py	/^class BaseChallenge(object):$/;"	kind:class	line:5
+BaseChallenge	../CTFd/plugins/challenges/__init__.py	/^class BaseChallenge(object):$/;"	kind:class	line:6
 BaseKey	../CTFd/plugins/keys/__init__.py	/^class BaseKey(object):$/;"	kind:class	line:6
 Blueprint	../CTFd/admin/__init__.py	/^    abort, render_template_string, send_file$/;"	kind:namespace	line:7
 Blueprint	../CTFd/admin/challenges.py	/^from flask import current_app as app, render_template, request, redirect, jsonify, url_for, Blueprint$/;"	kind:namespace	line:1
@@ -43,10 +44,10 @@ Blueprint	../CTFd/views.py	/^from flask import current_app as app, render_templa
 CACHE_REDIS_URL	../CTFd/config.py	/^        CACHE_REDIS_URL = os.environ.get('REDIS_URL')$/;"	kind:variable	line:118
 CACHE_TYPE	../CTFd/config.py	/^    CACHE_TYPE = "simple"$/;"	kind:variable	line:116
 CHALLENGE_CLASSES	../CTFd/admin/challenges.py	/^from CTFd.plugins.challenges import get_chal_class, CHALLENGE_CLASSES$/;"	kind:namespace	line:5
-CHALLENGE_CLASSES	../CTFd/plugins/challenges/__init__.py	/^CHALLENGE_CLASSES = {$/;"	kind:variable	line:23
+CHALLENGE_CLASSES	../CTFd/plugins/challenges/__init__.py	/^CHALLENGE_CLASSES = {$/;"	kind:variable	line:26
 CHAL_AMOUNT	../populate.py	/^CHAL_AMOUNT = 20$/;"	kind:variable	line:14
 CTFdRegexKey	../CTFd/plugins/keys/__init__.py	/^class CTFdRegexKey(BaseKey):$/;"	kind:class	line:29
-CTFdStandardChallenge	../CTFd/plugins/challenges/__init__.py	/^class CTFdStandardChallenge(BaseChallenge):$/;"	kind:class	line:10
+CTFdStandardChallenge	../CTFd/plugins/challenges/__init__.py	/^class CTFdStandardChallenge(BaseChallenge):$/;"	kind:class	line:11
 CTFdStaticKey	../CTFd/plugins/keys/__init__.py	/^class CTFdStaticKey(BaseKey):$/;"	kind:class	line:15
 Cache	../CTFd/utils.py	/^from flask_caching import Cache$/;"	kind:namespace	line:25
 Challenges	../CTFd/__init__.py	/^        from CTFd.models import db, Teams, Solves, Challenges, WrongKeys, Keys, Tags, Files, Tracking$/;"	kind:namespace	line:52
@@ -57,9 +58,10 @@ Challenges	../CTFd/admin/pages.py	/^from CTFd.models import db, Teams, Solves, A
 Challenges	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Challenges	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Challenges	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
-Challenges	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:9
-Challenges	../CTFd/models.py	/^class Challenges(db.Model):$/;"	kind:class	line:44
-Challenges	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:6
+Challenges	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
+Challenges	../CTFd/models.py	/^class Challenges(db.Model):$/;"	kind:class	line:43
+Challenges	../CTFd/plugins/challenges/__init__.py	/^from CTFd.models import db, Keys, Awards, Challenges, Gamble$/;"	kind:namespace	line:2
+Challenges	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
 Challenges	../CTFd/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges$/;"	kind:namespace	line:4
 Challenges	../migrations/versions/87733981ca0e_adds_challenge_types_and_uses_keys_table.py	/^from CTFd.models import db, Challenges, Keys$/;"	kind:namespace	line:8
 Challenges	../populate.py	/^from CTFd.models import Teams, Solves, Challenges, WrongKeys, Keys, Files, Awards$/;"	kind:namespace	line:9
@@ -71,7 +73,7 @@ Config	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, 
 Config	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Config	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Config	../CTFd/config.py	/^class Config(object):$/;"	kind:class	line:16
-Config	../CTFd/models.py	/^class Config(db.Model):$/;"	kind:class	line:313
+Config	../CTFd/models.py	/^class Config(db.Model):$/;"	kind:class	line:334
 Config	../CTFd/utils.py	/^from CTFd.models import db, WrongKeys, Pages, Config, Tracking, Teams, Files, ip2long, long2ip$/;"	kind:namespace	line:31
 DEBUG	../CTFd/config.py	/^    DEBUG = True$/;"	kind:variable	line:125
 DatabaseError	../CTFd/admin/__init__.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:13
@@ -91,19 +93,24 @@ Files	../CTFd/admin/pages.py	/^from CTFd.models import db, Teams, Solves, Awards
 Files	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Files	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Files	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
-Files	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:9
-Files	../CTFd/models.py	/^class Files(db.Model):$/;"	kind:class	line:119
-Files	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:6
+Files	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
+Files	../CTFd/models.py	/^class Files(db.Model):$/;"	kind:class	line:121
+Files	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
 Files	../CTFd/utils.py	/^from CTFd.models import db, WrongKeys, Pages, Config, Tracking, Teams, Files, ip2long, long2ip$/;"	kind:namespace	line:31
-Files	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages$/;"	kind:namespace	line:9
+Files	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages, Gamble$/;"	kind:namespace	line:9
 Files	../populate.py	/^from CTFd.models import Teams, Solves, Challenges, WrongKeys, Keys, Files, Awards$/;"	kind:namespace	line:9
 Flask	../CTFd/__init__.py	/^from flask import Flask$/;"	kind:namespace	line:5
 Flask	../manage.py	/^from flask import Flask$/;"	kind:namespace	line:1
+Gamble	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
+Gamble	../CTFd/models.py	/^class Gamble(db.Model):$/;"	kind:class	line:344
+Gamble	../CTFd/plugins/challenges/__init__.py	/^from CTFd.models import db, Keys, Awards, Challenges, Gamble$/;"	kind:namespace	line:2
+Gamble	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
+Gamble	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages, Gamble$/;"	kind:namespace	line:9
 HOST	../CTFd/config.py	/^    HOST = ".ctfd.io"$/;"	kind:variable	line:68
 Hints	../CTFd/admin/challenges.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, Hints, Unlocks, DatabaseError$/;"	kind:namespace	line:3
-Hints	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:9
-Hints	../CTFd/models.py	/^class Hints(db.Model):$/;"	kind:class	line:66
-Hints	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:6
+Hints	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
+Hints	../CTFd/models.py	/^class Hints(db.Model):$/;"	kind:class	line:70
+Hints	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
 IntegrityError	../CTFd/admin/__init__.py	/^from sqlalchemy.exc import IntegrityError$/;"	kind:namespace	line:10
 KEY_CLASSES	../CTFd/admin/__init__.py	/^from CTFd.plugins.keys import get_key_class, KEY_CLASSES$/;"	kind:namespace	line:15
 KEY_CLASSES	../CTFd/admin/challenges.py	/^from CTFd.plugins.keys import get_key_class, KEY_CLASSES$/;"	kind:namespace	line:4
@@ -117,11 +124,11 @@ Keys	../CTFd/admin/pages.py	/^from CTFd.models import db, Teams, Solves, Awards,
 Keys	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Keys	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Keys	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
-Keys	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:9
-Keys	../CTFd/models.py	/^class Keys(db.Model):$/;"	kind:class	line:132
-Keys	../CTFd/plugins/challenges/__init__.py	/^from CTFd.models import db, Keys$/;"	kind:namespace	line:2
-Keys	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:6
-Keys	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Keys$/;"	kind:namespace	line:12
+Keys	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
+Keys	../CTFd/models.py	/^class Keys(db.Model):$/;"	kind:class	line:134
+Keys	../CTFd/plugins/challenges/__init__.py	/^from CTFd.models import db, Keys, Awards, Challenges, Gamble$/;"	kind:namespace	line:2
+Keys	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
+Keys	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Keys$/;"	kind:namespace	line:13
 Keys	../migrations/versions/87733981ca0e_adds_challenge_types_and_uses_keys_table.py	/^from CTFd.models import db, Challenges, Keys$/;"	kind:namespace	line:8
 Keys	../populate.py	/^from CTFd.models import Teams, Solves, Challenges, WrongKeys, Keys, Files, Awards$/;"	kind:namespace	line:9
 MAILFROM_ADDR	../CTFd/config.py	/^    MAILFROM_ADDR = "noreply@ctfd.io"$/;"	kind:variable	line:73
@@ -142,9 +149,9 @@ Pages	../CTFd/admin/pages.py	/^from CTFd.models import db, Teams, Solves, Awards
 Pages	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Pages	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Pages	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
-Pages	../CTFd/models.py	/^class Pages(db.Model):$/;"	kind:class	line:31
+Pages	../CTFd/models.py	/^class Pages(db.Model):$/;"	kind:class	line:30
 Pages	../CTFd/utils.py	/^from CTFd.models import db, WrongKeys, Pages, Config, Tracking, Teams, Files, ip2long, long2ip$/;"	kind:namespace	line:31
-Pages	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages$/;"	kind:namespace	line:9
+Pages	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages, Gamble$/;"	kind:namespace	line:9
 ProgrammingError	../CTFd/__init__.py	/^from sqlalchemy.exc import OperationalError, ProgrammingError$/;"	kind:namespace	line:8
 Response	../CTFd/views.py	/^from flask import current_app as app, render_template, request, redirect, abort, jsonify, url_for, session, Blueprint, Response, send_file$/;"	kind:namespace	line:4
 SECRET_KEY	../CTFd/config.py	/^    SECRET_KEY = 'AAAAAAAAAAAAAAAAAAAA'$/;"	kind:variable	line:122
@@ -168,11 +175,11 @@ Solves	../CTFd/admin/pages.py	/^from CTFd.models import db, Teams, Solves, Award
 Solves	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Solves	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Solves	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
-Solves	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:9
-Solves	../CTFd/models.py	/^class Solves(db.Model):$/;"	kind:class	line:241
-Solves	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:6
+Solves	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
+Solves	../CTFd/models.py	/^class Solves(db.Model):$/;"	kind:class	line:262
+Solves	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
 Solves	../CTFd/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges$/;"	kind:namespace	line:4
-Solves	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages$/;"	kind:namespace	line:9
+Solves	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages, Gamble$/;"	kind:namespace	line:9
 Solves	../migrations/versions/1ec4a28fe0ff_change_solves_ip_to_string_and_add_ip_to_wrongkeys.py	/^from CTFd.models import db, Solves, WrongKeys$/;"	kind:namespace	line:8
 Solves	../populate.py	/^from CTFd.models import Teams, Solves, Challenges, WrongKeys, Keys, Files, Awards$/;"	kind:namespace	line:9
 Solves	../tests/test_user_facing.py	/^from CTFd.models import Teams, Solves, WrongKeys$/;"	kind:namespace	line:5
@@ -188,9 +195,9 @@ Tags	../CTFd/admin/pages.py	/^from CTFd.models import db, Teams, Solves, Awards,
 Tags	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Tags	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Tags	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
-Tags	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:9
-Tags	../CTFd/models.py	/^class Tags(db.Model):$/;"	kind:class	line:106
-Tags	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:6
+Tags	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
+Tags	../CTFd/models.py	/^class Tags(db.Model):$/;"	kind:class	line:108
+Tags	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
 Teams	../CTFd/__init__.py	/^        from CTFd.models import db, Teams, Solves, Challenges, WrongKeys, Keys, Tags, Files, Tracking$/;"	kind:namespace	line:52
 Teams	../CTFd/admin/__init__.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:13
 Teams	../CTFd/admin/challenges.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, Hints, Unlocks, DatabaseError$/;"	kind:namespace	line:3
@@ -200,12 +207,12 @@ Teams	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, A
 Teams	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Teams	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Teams	../CTFd/auth.py	/^from CTFd.models import db, Teams$/;"	kind:namespace	line:10
-Teams	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:9
-Teams	../CTFd/models.py	/^class Teams(db.Model):$/;"	kind:class	line:148
-Teams	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:6
+Teams	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
+Teams	../CTFd/models.py	/^class Teams(db.Model):$/;"	kind:class	line:150
+Teams	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
 Teams	../CTFd/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges$/;"	kind:namespace	line:4
 Teams	../CTFd/utils.py	/^from CTFd.models import db, WrongKeys, Pages, Config, Tracking, Teams, Files, ip2long, long2ip$/;"	kind:namespace	line:31
-Teams	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages$/;"	kind:namespace	line:9
+Teams	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages, Gamble$/;"	kind:namespace	line:9
 Teams	../populate.py	/^from CTFd.models import Teams, Solves, Challenges, WrongKeys, Keys, Files, Awards$/;"	kind:namespace	line:9
 Teams	../tests/test_admin_facing.py	/^from CTFd.models import Teams$/;"	kind:namespace	line:2
 Teams	../tests/test_user_facing.py	/^from CTFd.models import Teams, Solves, WrongKeys$/;"	kind:namespace	line:5
@@ -222,15 +229,15 @@ Tracking	../CTFd/admin/pages.py	/^from CTFd.models import db, Teams, Solves, Awa
 Tracking	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Tracking	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 Tracking	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
-Tracking	../CTFd/models.py	/^class Tracking(db.Model):$/;"	kind:class	line:299
+Tracking	../CTFd/models.py	/^class Tracking(db.Model):$/;"	kind:class	line:320
 Tracking	../CTFd/utils.py	/^from CTFd.models import db, WrongKeys, Pages, Config, Tracking, Teams, Files, ip2long, long2ip$/;"	kind:namespace	line:31
 UPLOAD_FOLDER	../CTFd/config.py	/^    UPLOAD_FOLDER = os.environ.get('UPLOAD_FOLDER') or os.path.join(os.path.dirname(__file__), 'uploads')$/;"	kind:variable	line:80
 USER_AMOUNT	../populate.py	/^USER_AMOUNT = 50$/;"	kind:variable	line:13
 Unlocks	../CTFd/admin/challenges.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, Hints, Unlocks, DatabaseError$/;"	kind:namespace	line:3
 Unlocks	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
-Unlocks	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:9
-Unlocks	../CTFd/models.py	/^class Unlocks(db.Model):$/;"	kind:class	line:283
-Unlocks	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:6
+Unlocks	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
+Unlocks	../CTFd/models.py	/^class Unlocks(db.Model):$/;"	kind:class	line:304
+Unlocks	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
 WrongKeys	../CTFd/__init__.py	/^        from CTFd.models import db, Teams, Solves, Challenges, WrongKeys, Keys, Tags, Files, Tracking$/;"	kind:namespace	line:52
 WrongKeys	../CTFd/admin/__init__.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:13
 WrongKeys	../CTFd/admin/challenges.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, Hints, Unlocks, DatabaseError$/;"	kind:namespace	line:3
@@ -239,27 +246,28 @@ WrongKeys	../CTFd/admin/pages.py	/^from CTFd.models import db, Teams, Solves, Aw
 WrongKeys	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 WrongKeys	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 WrongKeys	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
-WrongKeys	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:9
-WrongKeys	../CTFd/models.py	/^class WrongKeys(db.Model):$/;"	kind:class	line:264
-WrongKeys	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:6
+WrongKeys	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
+WrongKeys	../CTFd/models.py	/^class WrongKeys(db.Model):$/;"	kind:class	line:285
+WrongKeys	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
 WrongKeys	../CTFd/utils.py	/^from CTFd.models import db, WrongKeys, Pages, Config, Tracking, Teams, Files, ip2long, long2ip$/;"	kind:namespace	line:31
 WrongKeys	../migrations/versions/1ec4a28fe0ff_change_solves_ip_to_string_and_add_ip_to_wrongkeys.py	/^from CTFd.models import db, Solves, WrongKeys$/;"	kind:namespace	line:8
 WrongKeys	../populate.py	/^from CTFd.models import Teams, Solves, Challenges, WrongKeys, Keys, Files, Awards$/;"	kind:namespace	line:9
 WrongKeys	../tests/test_user_facing.py	/^from CTFd.models import Teams, Solves, WrongKeys$/;"	kind:namespace	line:5
 __init__	../CTFd/__init__.py	/^    def __init__(self, searchpath, encoding='utf-8', followlinks=False):$/;"	kind:member	line:25
-__init__	../CTFd/models.py	/^    def __init__(self, chal, flag, key_type):$/;"	kind:member	line:139
-__init__	../CTFd/models.py	/^    def __init__(self, chal, hint, cost=0, type=0):$/;"	kind:member	line:73
-__init__	../CTFd/models.py	/^    def __init__(self, chal, location):$/;"	kind:member	line:124
-__init__	../CTFd/models.py	/^    def __init__(self, chal, tag):$/;"	kind:member	line:111
-__init__	../CTFd/models.py	/^    def __init__(self, ip, team):$/;"	kind:member	line:305
-__init__	../CTFd/models.py	/^    def __init__(self, key, value):$/;"	kind:member	line:318
-__init__	../CTFd/models.py	/^    def __init__(self, model, teamid, itemid):$/;"	kind:member	line:290
-__init__	../CTFd/models.py	/^    def __init__(self, name, description, value, category, type=0):$/;"	kind:member	line:54
-__init__	../CTFd/models.py	/^    def __init__(self, name, email, password):$/;"	kind:member	line:162
-__init__	../CTFd/models.py	/^    def __init__(self, route, html):$/;"	kind:member	line:36
-__init__	../CTFd/models.py	/^    def __init__(self, teamid, chalid, ip, flag):$/;"	kind:member	line:253
-__init__	../CTFd/models.py	/^    def __init__(self, teamid, chalid, ip, flag):$/;"	kind:member	line:273
-__init__	../CTFd/models.py	/^    def __init__(self, teamid, name, value):$/;"	kind:member	line:96
+__init__	../CTFd/models.py	/^    def __init__(self, chal, flag, key_type):$/;"	kind:member	line:141
+__init__	../CTFd/models.py	/^    def __init__(self, chal, hint, cost=0, type=0):$/;"	kind:member	line:77
+__init__	../CTFd/models.py	/^    def __init__(self, chal, location):$/;"	kind:member	line:126
+__init__	../CTFd/models.py	/^    def __init__(self, chal, tag):$/;"	kind:member	line:113
+__init__	../CTFd/models.py	/^    def __init__(self, ip, team):$/;"	kind:member	line:326
+__init__	../CTFd/models.py	/^    def __init__(self, key, value):$/;"	kind:member	line:339
+__init__	../CTFd/models.py	/^    def __init__(self, model, teamid, itemid):$/;"	kind:member	line:311
+__init__	../CTFd/models.py	/^    def __init__(self, name, description, value, category, type=0):$/;"	kind:member	line:57
+__init__	../CTFd/models.py	/^    def __init__(self, name, email, password):$/;"	kind:member	line:164
+__init__	../CTFd/models.py	/^    def __init__(self, route, html):$/;"	kind:member	line:35
+__init__	../CTFd/models.py	/^    def __init__(self, teamid, chalid, ip, flag):$/;"	kind:member	line:274
+__init__	../CTFd/models.py	/^    def __init__(self, teamid, chalid, ip, flag):$/;"	kind:member	line:294
+__init__	../CTFd/models.py	/^    def __init__(self, teamid, chalid, value):$/;"	kind:member	line:360
+__init__	../CTFd/models.py	/^    def __init__(self, teamid, name, value):$/;"	kind:member	line:98
 __init__.py	../CTFd/__init__.py	1;"	kind:file	line:1
 __init__.py	../CTFd/admin/__init__.py	1;"	kind:file	line:1
 __init__.py	../CTFd/plugins/__init__.py	1;"	kind:file	line:1
@@ -267,28 +275,30 @@ __init__.py	../CTFd/plugins/challenges/__init__.py	1;"	kind:file	line:1
 __init__.py	../CTFd/plugins/gamble/__init__.py	1;"	kind:file	line:1
 __init__.py	../CTFd/plugins/keys/__init__.py	1;"	kind:file	line:1
 __init__.py	../tests/__init__.py	1;"	kind:file	line:1
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:101
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:115
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:128
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:144
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:167
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:260
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:279
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:295
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:309
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:40
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:62
-__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:79
-__table_args__	../CTFd/models.py	/^    __table_args__ = (db.UniqueConstraint('chalid', 'teamid'), {})$/;"	kind:variable	line:242
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:103
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:117
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:130
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:146
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:169
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:281
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:300
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:316
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:330
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:365
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:39
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:66
+__repr__	../CTFd/models.py	/^    def __repr__(self):$/;"	kind:member	line:83
+__table_args__	../CTFd/models.py	/^    __table_args__ = (db.UniqueConstraint('chalid', 'teamid'), {})$/;"	kind:variable	line:263
+__table_args__	../CTFd/models.py	/^    __table_args__ = (db.UniqueConstraint('chalid', 'teamid'), {})$/;"	kind:variable	line:345
 __version__	../CTFd/__init__.py	/^__version__ = '1.0.3'$/;"	kind:variable	line:21
 a4e30c94c360_adds_data_column_to_keys_table.py	../migrations/versions/a4e30c94c360_adds_data_column_to_keys_table.py	1;"	kind:file	line:1
 abort	../CTFd/admin/__init__.py	/^    abort, render_template_string, send_file$/;"	kind:namespace	line:7
 abort	../CTFd/utils.py	/^from flask import current_app as app, request, redirect, url_for, session, render_template, abort$/;"	kind:namespace	line:24
 abort	../CTFd/views.py	/^from flask import current_app as app, render_template, request, redirect, abort, jsonify, url_for, session, Blueprint, Response, send_file$/;"	kind:namespace	line:4
-addGamble	../CTFd/plugins/gamble/__init__.py	/^    def addGamble():$/;"	kind:function	line:23
+addGamble	../CTFd/plugins/gamble/__init__.py	/^    def addGamble():$/;"	kind:function	line:34
 admin	../CTFd/__init__.py	/^        from CTFd.admin import admin, admin_statistics, admin_challenges, admin_pages, admin_scoreboard, admin_keys, admin_teams$/;"	kind:namespace	line:116
 admin	../CTFd/admin/__init__.py	/^admin = Blueprint('admin', __name__)$/;"	kind:variable	line:27
-admin	../CTFd/models.py	/^    admin = db.Column(db.Boolean, default=False)$/;"	kind:variable	line:159
+admin	../CTFd/models.py	/^    admin = db.Column(db.Boolean, default=False)$/;"	kind:variable	line:161
 admin_awards	../CTFd/admin/teams.py	/^def admin_awards(teamid):$/;"	kind:function	line:263
 admin_chal_types	../CTFd/admin/challenges.py	/^def admin_chal_types():$/;"	kind:function	line:16
 admin_challenges	../CTFd/__init__.py	/^        from CTFd.admin import admin, admin_statistics, admin_challenges, admin_pages, admin_scoreboard, admin_keys, admin_teams$/;"	kind:namespace	line:116
@@ -347,9 +357,9 @@ admins_only	../CTFd/admin/pages.py	/^from CTFd.utils import admins_only, is_admi
 admins_only	../CTFd/admin/scoreboard.py	/^from CTFd.utils import admins_only, is_admin, cache$/;"	kind:namespace	line:2
 admins_only	../CTFd/admin/statistics.py	/^from CTFd.utils import admins_only, is_admin, cache$/;"	kind:namespace	line:2
 admins_only	../CTFd/admin/teams.py	/^from CTFd.utils import admins_only, is_admin, cache$/;"	kind:namespace	line:2
-admins_only	../CTFd/plugins/gamble/__init__.py	/^from CTFd.utils import admins_only, is_admin$/;"	kind:namespace	line:4
+admins_only	../CTFd/plugins/gamble/__init__.py	/^from CTFd.utils import admins_only, is_admin$/;"	kind:namespace	line:5
 admins_only	../CTFd/utils.py	/^def admins_only(f):$/;"	kind:function	line:213
-affiliation	../CTFd/models.py	/^    affiliation = db.Column(db.String(128))$/;"	kind:variable	line:154
+affiliation	../CTFd/models.py	/^    affiliation = db.Column(db.String(128))$/;"	kind:variable	line:156
 app	../CTFd/admin/__init__.py	/^    abort, render_template_string, send_file$/;"	kind:namespace	line:7
 app	../CTFd/admin/challenges.py	/^from flask import current_app as app, render_template, request, redirect, jsonify, url_for, Blueprint$/;"	kind:namespace	line:1
 app	../CTFd/admin/keys.py	/^from flask import current_app as app, render_template, request, redirect, jsonify, url_for, Blueprint$/;"	kind:namespace	line:1
@@ -374,7 +384,7 @@ authed	../CTFd/utils.py	/^def authed():$/;"	kind:function	line:177
 award	../populate.py	/^                award = Awards(x + 1, gen_word(), random.randint(-10, 10))$/;"	kind:variable	line:278
 backup	../export.py	/^    backup = export_ctf()$/;"	kind:variable	line:12
 ban	../CTFd/admin/teams.py	/^def ban(teamid):$/;"	kind:function	line:134
-banned	../CTFd/models.py	/^    banned = db.Column(db.Boolean, default=False)$/;"	kind:variable	line:157
+banned	../CTFd/models.py	/^    banned = db.Column(db.Boolean, default=False)$/;"	kind:variable	line:159
 base64	../CTFd/utils.py	/^import base64$/;"	kind:namespace	line:1
 base64decode	../CTFd/utils.py	/^def base64decode(s, urldecode=False):$/;"	kind:function	line:542
 base64decode	../tests/test_utils.py	/^from CTFd.utils import base64encode, base64decode$/;"	kind:namespace	line:7
@@ -391,7 +401,7 @@ bcrypt_sha256	../CTFd/admin/teams.py	/^from passlib.hash import bcrypt_sha256$/;
 bcrypt_sha256	../CTFd/auth.py	/^from passlib.hash import bcrypt_sha256$/;"	kind:namespace	line:8
 bcrypt_sha256	../CTFd/models.py	/^from passlib.hash import bcrypt_sha256$/;"	kind:namespace	line:9
 bcrypt_sha256	../CTFd/views.py	/^from passlib.hash import bcrypt_sha256$/;"	kind:namespace	line:7
-bracket	../CTFd/models.py	/^    bracket = db.Column(db.String(32))$/;"	kind:variable	line:156
+bracket	../CTFd/models.py	/^    bracket = db.Column(db.String(32))$/;"	kind:variable	line:158
 branch_labels	../migrations/versions/1ec4a28fe0ff_change_solves_ip_to_string_and_add_ip_to_wrongkeys.py	/^branch_labels = None$/;"	kind:variable	line:27
 branch_labels	../migrations/versions/87733981ca0e_adds_challenge_types_and_uses_keys_table.py	/^branch_labels = None$/;"	kind:variable	line:19
 branch_labels	../migrations/versions/a4e30c94c360_adds_data_column_to_keys_table.py	/^branch_labels = None$/;"	kind:variable	line:15
@@ -413,20 +423,23 @@ cache	../CTFd/views.py	/^from CTFd.utils import cache, markdown$/;"	kind:namespa
 can_register	../CTFd/utils.py	/^def can_register():$/;"	kind:function	line:209
 can_send_mail	../CTFd/utils.py	/^def can_send_mail():$/;"	kind:function	line:417
 categories	../populate.py	/^categories = [$/;"	kind:variable	line:17
-category	../CTFd/models.py	/^    category = db.Column(db.String(80))$/;"	kind:variable	line:50
-category	../CTFd/models.py	/^    category = db.Column(db.String(80))$/;"	kind:variable	line:93
+category	../CTFd/models.py	/^    category = db.Column(db.String(80))$/;"	kind:variable	line:354
+category	../CTFd/models.py	/^    category = db.Column(db.String(80))$/;"	kind:variable	line:51
+category	../CTFd/models.py	/^    category = db.Column(db.String(80))$/;"	kind:variable	line:95
 cb3cfcc47e2f_base.py	../migrations/versions/cb3cfcc47e2f_base.py	1;"	kind:file	line:1
 cbf5620f8e15_removes_containers_table_in_favor_of_using_a_plugin_to_manage_containers.py	../migrations/versions/cbf5620f8e15_removes_containers_table_in_favor_of_using_a_plugin_to_manage_containers.py	1;"	kind:file	line:1
 chal	../CTFd/challenges.py	/^def chal(chalid):$/;"	kind:function	line:251
-chal	../CTFd/models.py	/^    chal = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:108
-chal	../CTFd/models.py	/^    chal = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:121
-chal	../CTFd/models.py	/^    chal = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:134
-chal	../CTFd/models.py	/^    chal = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:69
-chal	../CTFd/models.py	/^    chal = db.relationship('Challenges', foreign_keys="Solves.chalid", lazy='joined')$/;"	kind:variable	line:250
-chal	../CTFd/models.py	/^    chal = db.relationship('Challenges', foreign_keys="WrongKeys.chalid", lazy='joined')$/;"	kind:variable	line:271
+chal	../CTFd/models.py	/^    chal = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:110
+chal	../CTFd/models.py	/^    chal = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:123
+chal	../CTFd/models.py	/^    chal = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:136
+chal	../CTFd/models.py	/^    chal = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:73
+chal	../CTFd/models.py	/^    chal = db.relationship('Challenges', foreign_keys="Gamble.chalid", lazy='joined')$/;"	kind:variable	line:358
+chal	../CTFd/models.py	/^    chal = db.relationship('Challenges', foreign_keys="Solves.chalid", lazy='joined')$/;"	kind:variable	line:271
+chal	../CTFd/models.py	/^    chal = db.relationship('Challenges', foreign_keys="WrongKeys.chalid", lazy='joined')$/;"	kind:variable	line:292
 chal	../populate.py	/^            chal = random.randint(1, CHAL_AMOUNT)$/;"	kind:variable	line:232
-chalid	../CTFd/models.py	/^    chalid = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:244
-chalid	../CTFd/models.py	/^    chalid = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:266
+chalid	../CTFd/models.py	/^    chalid = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:265
+chalid	../CTFd/models.py	/^    chalid = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:287
+chalid	../CTFd/models.py	/^    chalid = db.Column(db.Integer, db.ForeignKey('challenges.id'))$/;"	kind:variable	line:347
 chalid	../populate.py	/^                chalid = random.randint(1, CHAL_AMOUNT)$/;"	kind:variable	line:260
 chalid	../populate.py	/^                chalid = random.randint(1, CHAL_AMOUNT)$/;"	kind:variable	line:293
 challenges	../CTFd/__init__.py	/^        from CTFd.challenges import challenges$/;"	kind:namespace	line:113
@@ -444,9 +457,9 @@ config	../migrations/env.py	/^config = context.config$/;"	kind:variable	line:9
 config.py	../CTFd/config.py	1;"	kind:file	line:1
 confirm_user	../CTFd/auth.py	/^def confirm_user(data=None):$/;"	kind:function	line:18
 context	../migrations/env.py	/^from alembic import context$/;"	kind:namespace	line:2
-cost	../CTFd/models.py	/^    cost = db.Column(db.Integer, default=0)$/;"	kind:variable	line:71
+cost	../CTFd/models.py	/^    cost = db.Column(db.Integer, default=0)$/;"	kind:variable	line:75
 count	../populate.py	/^        count = 0$/;"	kind:variable	line:242
-country	../CTFd/models.py	/^    country = db.Column(db.String(32))$/;"	kind:variable	line:155
+country	../CTFd/models.py	/^    country = db.Column(db.String(32))$/;"	kind:variable	line:157
 create_app	../CTFd/__init__.py	/^def create_app(config='CTFd.config.Config'):$/;"	kind:function	line:46
 create_app	../export.py	/^from CTFd import create_app$/;"	kind:namespace	line:1
 create_app	../import.py	/^from CTFd import create_app$/;"	kind:namespace	line:1
@@ -472,15 +485,16 @@ ctftime	../CTFd/utils.py	/^def ctftime():$/;"	kind:function	line:239
 current_app	../migrations/env.py	/^from flask import current_app$/;"	kind:namespace	line:21
 custom_css	../CTFd/views.py	/^def custom_css():$/;"	kind:function	line:99
 d6514ec92738_adding_max_attempts_to_challenges.py	../migrations/versions/d6514ec92738_adding_max_attempts_to_challenges.py	1;"	kind:file	line:1
-data	../CTFd/models.py	/^    data = db.Column(db.Text)$/;"	kind:variable	line:137
+data	../CTFd/models.py	/^    data = db.Column(db.Text)$/;"	kind:variable	line:139
 database_exists	../CTFd/__init__.py	/^from sqlalchemy_utils import database_exists, create_database$/;"	kind:namespace	line:9
 database_exists	../tests/helpers.py	/^from sqlalchemy_utils import database_exists, create_database, drop_database$/;"	kind:namespace	line:3
 dataset	../CTFd/utils.py	/^import dataset$/;"	kind:namespace	line:19
-date	../CTFd/models.py	/^    date = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:248
 date	../CTFd/models.py	/^    date = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:269
-date	../CTFd/models.py	/^    date = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:286
-date	../CTFd/models.py	/^    date = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:303
-date	../CTFd/models.py	/^    date = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:88
+date	../CTFd/models.py	/^    date = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:290
+date	../CTFd/models.py	/^    date = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:307
+date	../CTFd/models.py	/^    date = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:324
+date	../CTFd/models.py	/^    date = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:351
+date	../CTFd/models.py	/^    date = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:92
 datetime	../CTFd/admin/__init__.py	/^import datetime$/;"	kind:namespace	line:4
 datetime	../CTFd/models.py	/^import datetime$/;"	kind:namespace	line:1
 datetime	../CTFd/utils.py	/^import datetime$/;"	kind:namespace	line:2
@@ -496,15 +510,15 @@ db	../CTFd/admin/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awar
 db	../CTFd/admin/statistics.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 db	../CTFd/admin/teams.py	/^from CTFd.models import db, Teams, Solves, Awards, Unlocks, Challenges, WrongKeys, Keys, Tags, Files, Tracking, Pages, Config, DatabaseError$/;"	kind:namespace	line:3
 db	../CTFd/auth.py	/^from CTFd.models import db, Teams$/;"	kind:namespace	line:10
-db	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:9
+db	../CTFd/challenges.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:9
 db	../CTFd/models.py	/^db = SQLAlchemy()$/;"	kind:variable	line:28
-db	../CTFd/plugins/challenges/__init__.py	/^from CTFd.models import db, Keys$/;"	kind:namespace	line:2
-db	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db$/;"	kind:namespace	line:3
-db	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks$/;"	kind:namespace	line:6
-db	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Keys$/;"	kind:namespace	line:12
+db	../CTFd/plugins/challenges/__init__.py	/^from CTFd.models import db, Keys, Awards, Challenges, Gamble$/;"	kind:namespace	line:2
+db	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db$/;"	kind:namespace	line:4
+db	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Challenges, Files, Solves, WrongKeys, Keys, Tags, Teams, Awards, Hints, Unlocks, Gamble$/;"	kind:namespace	line:7
+db	../CTFd/plugins/gamble/__init__.py	/^from CTFd.models import db, Keys$/;"	kind:namespace	line:13
 db	../CTFd/scoreboard.py	/^from CTFd.models import db, Teams, Solves, Awards, Challenges$/;"	kind:namespace	line:4
 db	../CTFd/utils.py	/^from CTFd.models import db, WrongKeys, Pages, Config, Tracking, Teams, Files, ip2long, long2ip$/;"	kind:namespace	line:31
-db	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages$/;"	kind:namespace	line:9
+db	../CTFd/views.py	/^from CTFd.models import db, Teams, Solves, Awards, Files, Pages, Gamble$/;"	kind:namespace	line:9
 db	../migrations/versions/1ec4a28fe0ff_change_solves_ip_to_string_and_add_ip_to_wrongkeys.py	/^from CTFd.models import db, Solves, WrongKeys$/;"	kind:namespace	line:8
 db	../migrations/versions/87733981ca0e_adds_challenge_types_and_uses_keys_table.py	/^from CTFd.models import db, Challenges, Keys$/;"	kind:namespace	line:8
 db	../populate.py	/^        db = app.db$/;"	kind:variable	line:217
@@ -522,8 +536,9 @@ depends_on	../migrations/versions/c7225db614c1_adding_hints_and_unlocks_tables.p
 depends_on	../migrations/versions/cb3cfcc47e2f_base.py	/^depends_on = None$/;"	kind:variable	line:17
 depends_on	../migrations/versions/cbf5620f8e15_removes_containers_table_in_favor_of_using_a_plugin_to_manage_containers.py	/^depends_on = None$/;"	kind:variable	line:15
 depends_on	../migrations/versions/d6514ec92738_adding_max_attempts_to_challenges.py	/^depends_on = None$/;"	kind:variable	line:16
-description	../CTFd/models.py	/^    description = db.Column(db.Text)$/;"	kind:variable	line:47
-description	../CTFd/models.py	/^    description = db.Column(db.Text)$/;"	kind:variable	line:87
+description	../CTFd/models.py	/^    description = db.Column(db.Text)$/;"	kind:variable	line:350
+description	../CTFd/models.py	/^    description = db.Column(db.Text)$/;"	kind:variable	line:46
+description	../CTFd/models.py	/^    description = db.Column(db.Text)$/;"	kind:variable	line:91
 destroy_ctfd	../tests/helpers.py	/^def destroy_ctfd(app):$/;"	kind:function	line:27
 disable_jinja_cache	../CTFd/utils.py	/^    def disable_jinja_cache():$/;"	kind:function	line:146
 down_revision	../migrations/versions/1ec4a28fe0ff_change_solves_ip_to_string_and_add_ip_to_wrongkeys.py	/^down_revision = 'c7225db614c1'$/;"	kind:variable	line:26
@@ -541,7 +556,7 @@ downgrade	../migrations/versions/cb3cfcc47e2f_base.py	/^def downgrade():$/;"	kin
 downgrade	../migrations/versions/cbf5620f8e15_removes_containers_table_in_favor_of_using_a_plugin_to_manage_containers.py	/^def downgrade():$/;"	kind:function	line:24
 downgrade	../migrations/versions/d6514ec92738_adding_max_attempts_to_challenges.py	/^def downgrade():$/;"	kind:function	line:25
 drop_database	../tests/helpers.py	/^from sqlalchemy_utils import database_exists, create_database, drop_database$/;"	kind:namespace	line:3
-email	../CTFd/models.py	/^    email = db.Column(db.String(128), unique=True)$/;"	kind:variable	line:151
+email	../CTFd/models.py	/^    email = db.Column(db.String(128), unique=True)$/;"	kind:variable	line:153
 email_user	../CTFd/admin/teams.py	/^def email_user(teamid):$/;"	kind:function	line:123
 emails	../populate.py	/^emails = [$/;"	kind:variable	line:153
 end	../CTFd/views.py	/^            end = utils.set_config('end', None)$/;"	kind:variable	line:56
@@ -554,17 +569,16 @@ export_ctf	../export.py	/^from CTFd.utils import ctf_name, export_ctf$/;"	kind:n
 extensions	../populate.py	/^extensions = [$/;"	kind:variable	line:162
 fails	../CTFd/challenges.py	/^def fails(teamid):$/;"	kind:function	line:228
 fileConfig	../migrations/env.py	/^from logging.config import fileConfig$/;"	kind:namespace	line:4
-file_handler	../CTFd/views.py	/^def file_handler(path):$/;"	kind:function	line:244
+file_handler	../CTFd/views.py	/^def file_handler(path):$/;"	kind:function	line:245
 filename	../populate.py	/^            filename = gen_file()$/;"	kind:variable	line:233
-flag	../CTFd/models.py	/^    flag = db.Column(db.Text)$/;"	kind:variable	line:136
-flag	../CTFd/models.py	/^    flag = db.Column(db.Text)$/;"	kind:variable	line:247
-flag	../CTFd/models.py	/^    flag = db.Column(db.Text)$/;"	kind:variable	line:270
+flag	../CTFd/models.py	/^    flag = db.Column(db.Text)$/;"	kind:variable	line:138
+flag	../CTFd/models.py	/^    flag = db.Column(db.Text)$/;"	kind:variable	line:268
+flag	../CTFd/models.py	/^    flag = db.Column(db.Text)$/;"	kind:variable	line:291
 forbidden	../CTFd/utils.py	/^    def forbidden(error):$/;"	kind:function	line:85
 freeze	../CTFd/views.py	/^            freeze = utils.set_config('freeze', None)$/;"	kind:variable	line:57
 full_name	../export.py	/^        full_name = "{}.{}.zip".format(ctf_name, day)$/;"	kind:variable	line:20
 functools	../CTFd/utils.py	/^import functools$/;"	kind:namespace	line:3
-gamble	../CTFd/plugins/gamble/__init__.py	/^    def gamble(code):$/;"	kind:function	line:19
-gamble_point	../CTFd/models.py	/^    gamble_point = db.Column(db.Integer)$/;"	kind:variable	line:90
+gamble	../CTFd/models.py	/^    def gamble(self, admin=False):$/;"	kind:member	line:199
 gateway_error	../CTFd/utils.py	/^    def gateway_error(error):$/;"	kind:function	line:93
 gen_award	../tests/helpers.py	/^def gen_award(db, teamid, name="award_name", value=100):$/;"	kind:function	line:72
 gen_category	../populate.py	/^def gen_category():$/;"	kind:function	line:194
@@ -585,9 +599,10 @@ gen_value	../populate.py	/^def gen_value():$/;"	kind:function	line:198
 gen_word	../populate.py	/^def gen_word():$/;"	kind:function	line:202
 gen_wrongkey	../tests/helpers.py	/^def gen_wrongkey(db, teamid, chalid, ip='127.0.0.1', flag='wrongkey'):$/;"	kind:function	line:118
 general_error	../CTFd/utils.py	/^    def general_error(error):$/;"	kind:function	line:89
+getPoint	../CTFd/plugins/gamble/__init__.py	/^    def getPoint():$/;"	kind:function	line:24
 get_chal_class	../CTFd/admin/challenges.py	/^from CTFd.plugins.challenges import get_chal_class, CHALLENGE_CLASSES$/;"	kind:namespace	line:5
 get_chal_class	../CTFd/challenges.py	/^from CTFd.plugins.challenges import get_chal_class$/;"	kind:namespace	line:11
-get_chal_class	../CTFd/plugins/challenges/__init__.py	/^def get_chal_class(class_id):$/;"	kind:function	line:28
+get_chal_class	../CTFd/plugins/challenges/__init__.py	/^def get_chal_class(class_id):$/;"	kind:function	line:31
 get_config	../CTFd/utils.py	/^def get_config(key):$/;"	kind:function	line:375
 get_config	../tests/test_utils.py	/^from CTFd.utils import get_config, set_config, override_template, sendmail, verify_email$/;"	kind:namespace	line:6
 get_configurable_plugins	../CTFd/utils.py	/^def get_configurable_plugins():$/;"	kind:function	line:339
@@ -597,7 +612,7 @@ get_key_class	../CTFd/admin/challenges.py	/^from CTFd.plugins.keys import get_ke
 get_key_class	../CTFd/admin/keys.py	/^from CTFd.plugins.keys import get_key_class, KEY_CLASSES$/;"	kind:namespace	line:4
 get_key_class	../CTFd/challenges.py	/^from CTFd.plugins.keys import get_key_class$/;"	kind:namespace	line:10
 get_key_class	../CTFd/plugins/challenges/__init__.py	/^from CTFd.plugins.keys import get_key_class$/;"	kind:namespace	line:1
-get_key_class	../CTFd/plugins/gamble/__init__.py	/^from CTFd.plugins.keys import get_key_class$/;"	kind:namespace	line:11
+get_key_class	../CTFd/plugins/gamble/__init__.py	/^from CTFd.plugins.keys import get_key_class$/;"	kind:namespace	line:12
 get_key_class	../CTFd/plugins/keys/__init__.py	/^def get_key_class(class_id):$/;"	kind:function	line:45
 get_kpm	../CTFd/utils.py	/^def get_kpm(teamid):  # keys per minute$/;"	kind:function	line:328
 get_scores	../tests/helpers.py	/^def get_scores(user):$/;"	kind:function	line:59
@@ -615,29 +630,31 @@ hashlib	../CTFd/models.py	/^import hashlib$/;"	kind:namespace	line:2
 hashlib	../CTFd/utils.py	/^import hashlib$/;"	kind:namespace	line:4
 hashlib	../populate.py	/^import hashlib$/;"	kind:namespace	line:5
 helpers.py	../tests/helpers.py	1;"	kind:file	line:1
-hidden	../CTFd/models.py	/^    hidden = db.Column(db.Boolean)$/;"	kind:variable	line:52
+hidden	../CTFd/models.py	/^    hidden = db.Column(db.Boolean)$/;"	kind:variable	line:53
 hide_scores	../CTFd/utils.py	/^def hide_scores():$/;"	kind:function	line:163
-hint	../CTFd/models.py	/^    hint = db.Column(db.Text)$/;"	kind:variable	line:70
+hint	../CTFd/models.py	/^    hint = db.Column(db.Text)$/;"	kind:variable	line:74
 hints_view	../CTFd/challenges.py	/^def hints_view(hintid):$/;"	kind:function	line:19
 hipsters	../populate.py	/^hipsters = [$/;"	kind:variable	line:87
 hmac	../CTFd/plugins/keys/__init__.py	/^import hmac$/;"	kind:namespace	line:3
-html	../CTFd/models.py	/^    html = db.Column(db.Text)$/;"	kind:variable	line:34
-icon	../CTFd/models.py	/^    icon = db.Column(db.Text)$/;"	kind:variable	line:94
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:107
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:120
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:133
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:149
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:243
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:265
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:284
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:300
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:314
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:32
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:45
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:67
-id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:84
-id	../CTFd/plugins/challenges/__init__.py	/^    id = 0$/;"	kind:variable	line:11
-id	../CTFd/plugins/challenges/__init__.py	/^    id = None$/;"	kind:variable	line:6
+html	../CTFd/models.py	/^    html = db.Column(db.Text)$/;"	kind:variable	line:33
+icon	../CTFd/models.py	/^    icon = db.Column(db.Text)$/;"	kind:variable	line:355
+icon	../CTFd/models.py	/^    icon = db.Column(db.Text)$/;"	kind:variable	line:96
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:109
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:122
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:135
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:151
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:264
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:286
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:305
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:31
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:321
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:335
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:346
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:44
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:71
+id	../CTFd/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:88
+id	../CTFd/plugins/challenges/__init__.py	/^    id = 0$/;"	kind:variable	line:12
+id	../CTFd/plugins/challenges/__init__.py	/^    id = None$/;"	kind:variable	line:7
 id	../CTFd/plugins/keys/__init__.py	/^    id = 0$/;"	kind:variable	line:16
 id	../CTFd/plugins/keys/__init__.py	/^    id = 1$/;"	kind:variable	line:30
 id	../CTFd/plugins/keys/__init__.py	/^    id = None$/;"	kind:variable	line:7
@@ -659,9 +676,9 @@ init_utils	../CTFd/utils.py	/^def init_utils(app):$/;"	kind:function	line:97
 inject_user	../CTFd/utils.py	/^    def inject_user():$/;"	kind:function	line:112
 input	../CTFd/__init__.py	/^from six.moves import input$/;"	kind:namespace	line:11
 io	../CTFd/utils.py	/^import io$/;"	kind:namespace	line:21
-ip	../CTFd/models.py	/^    ip = db.Column(db.String(46))$/;"	kind:variable	line:246
-ip	../CTFd/models.py	/^    ip = db.Column(db.String(46))$/;"	kind:variable	line:268
-ip	../CTFd/models.py	/^    ip = db.Column(db.String(46))$/;"	kind:variable	line:301
+ip	../CTFd/models.py	/^    ip = db.Column(db.String(46))$/;"	kind:variable	line:267
+ip	../CTFd/models.py	/^    ip = db.Column(db.String(46))$/;"	kind:variable	line:289
+ip	../CTFd/models.py	/^    ip = db.Column(db.String(46))$/;"	kind:variable	line:322
 ip2long	../CTFd/models.py	/^def ip2long(ip):$/;"	kind:function	line:18
 ip2long	../CTFd/utils.py	/^from CTFd.models import db, WrongKeys, Pages, Config, Tracking, Teams, Files, ip2long, long2ip$/;"	kind:namespace	line:31
 ip2long	../migrations/versions/1ec4a28fe0ff_change_solves_ip_to_string_and_add_ip_to_wrongkeys.py	/^def ip2long(ip):$/;"	kind:function	line:14
@@ -673,14 +690,14 @@ is_admin	../CTFd/admin/pages.py	/^from CTFd.utils import admins_only, is_admin, 
 is_admin	../CTFd/admin/scoreboard.py	/^from CTFd.utils import admins_only, is_admin, cache$/;"	kind:namespace	line:2
 is_admin	../CTFd/admin/statistics.py	/^from CTFd.utils import admins_only, is_admin, cache$/;"	kind:namespace	line:2
 is_admin	../CTFd/admin/teams.py	/^from CTFd.utils import admins_only, is_admin, cache$/;"	kind:namespace	line:2
-is_admin	../CTFd/plugins/gamble/__init__.py	/^from CTFd.utils import admins_only, is_admin$/;"	kind:namespace	line:4
+is_admin	../CTFd/plugins/gamble/__init__.py	/^from CTFd.utils import admins_only, is_admin$/;"	kind:namespace	line:5
 is_admin	../CTFd/utils.py	/^def is_admin():$/;"	kind:function	line:201
 is_safe_url	../CTFd/utils.py	/^def is_safe_url(target):$/;"	kind:function	line:513
 is_scoreboard_frozen	../CTFd/utils.py	/^def is_scoreboard_frozen():$/;"	kind:function	line:228
 is_setup	../CTFd/utils.py	/^def is_setup():$/;"	kind:function	line:193
 is_verified	../CTFd/utils.py	/^def is_verified():$/;"	kind:function	line:181
-itemid	../CTFd/models.py	/^    itemid = db.Column(db.Integer)$/;"	kind:variable	line:287
-joined	../CTFd/models.py	/^    joined = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:160
+itemid	../CTFd/models.py	/^    itemid = db.Column(db.Integer)$/;"	kind:variable	line:308
+joined	../CTFd/models.py	/^    joined = db.Column(db.DateTime, default=datetime.datetime.utcnow)$/;"	kind:variable	line:162
 json	../CTFd/admin/__init__.py	/^import json$/;"	kind:namespace	line:2
 json	../CTFd/challenges.py	/^import json$/;"	kind:namespace	line:1
 json	../CTFd/models.py	/^import json$/;"	kind:namespace	line:3
@@ -700,12 +717,12 @@ jsonify	../CTFd/scoreboard.py	/^from flask import render_template, jsonify, Blue
 jsonify	../CTFd/views.py	/^from flask import current_app as app, render_template, request, redirect, abort, jsonify, url_for, session, Blueprint, Response, send_file$/;"	kind:namespace	line:4
 key	../CTFd/config.py	/^        key = os.urandom(64)$/;"	kind:variable	line:9
 key	../CTFd/config.py	/^    key = secret.read()$/;"	kind:variable	line:7
-key	../CTFd/models.py	/^    key = db.Column(db.Text)$/;"	kind:variable	line:315
-key_type	../CTFd/models.py	/^    key_type = db.Column(db.Integer)$/;"	kind:variable	line:135
+key	../CTFd/models.py	/^    key = db.Column(db.Text)$/;"	kind:variable	line:336
+key_type	../CTFd/models.py	/^    key_type = db.Column(db.Integer)$/;"	kind:variable	line:137
 keys.py	../CTFd/admin/keys.py	1;"	kind:file	line:1
 keys_table	../migrations/versions/87733981ca0e_adds_challenge_types_and_uses_keys_table.py	/^keys_table = table('keys',$/;"	kind:variable	line:22
-load	../CTFd/plugins/gamble/__init__.py	/^def load(app):$/;"	kind:function	line:17
-location	../CTFd/models.py	/^    location = db.Column(db.Text)$/;"	kind:variable	line:122
+load	../CTFd/plugins/gamble/__init__.py	/^def load(app):$/;"	kind:function	line:18
+location	../CTFd/models.py	/^    location = db.Column(db.Text)$/;"	kind:variable	line:124
 logger	../migrations/env.py	/^logger = logging.getLogger('alembic.env')$/;"	kind:variable	line:15
 logging	../CTFd/auth.py	/^import logging$/;"	kind:namespace	line:1
 logging	../CTFd/challenges.py	/^import logging$/;"	kind:namespace	line:2
@@ -735,7 +752,7 @@ manage.py	../manage.py	1;"	kind:file	line:1
 manager	../manage.py	/^manager = Manager(app)$/;"	kind:variable	line:9
 markdown	../CTFd/utils.py	/^markdown = mistune.Markdown()$/;"	kind:variable	line:35
 markdown	../CTFd/views.py	/^from CTFd.utils import cache, markdown$/;"	kind:namespace	line:10
-max_attempts	../CTFd/models.py	/^    max_attempts = db.Column(db.Integer, default=0)$/;"	kind:variable	line:48
+max_attempts	../CTFd/models.py	/^    max_attempts = db.Column(db.Integer, default=0)$/;"	kind:variable	line:47
 max_tries	../CTFd/views.py	/^            max_tries = utils.set_config('max_tries', 0)$/;"	kind:variable	line:52
 md5hash	../populate.py	/^            md5hash = hashlib.md5(filename.encode('utf-8')).hexdigest()$/;"	kind:variable	line:234
 migrate	../CTFd/__init__.py	/^from CTFd.utils import cache, migrate, migrate_upgrade, migrate_stamp$/;"	kind:namespace	line:13
@@ -745,13 +762,14 @@ migrate_stamp	../CTFd/utils.py	/^from flask_migrate import Migrate, upgrade as m
 migrate_upgrade	../CTFd/__init__.py	/^from CTFd.utils import cache, migrate, migrate_upgrade, migrate_stamp$/;"	kind:namespace	line:13
 migrate_upgrade	../CTFd/utils.py	/^from flask_migrate import Migrate, upgrade as migrate_upgrade, stamp as migrate_stamp$/;"	kind:namespace	line:26
 mistune	../CTFd/utils.py	/^import mistune$/;"	kind:namespace	line:8
-model	../CTFd/models.py	/^    model = db.Column(db.String(32))$/;"	kind:variable	line:288
+model	../CTFd/models.py	/^    model = db.Column(db.String(32))$/;"	kind:variable	line:309
 models.py	../CTFd/models.py	1;"	kind:file	line:1
-name	../CTFd/models.py	/^    name = db.Column(db.String(128), unique=True)$/;"	kind:variable	line:150
-name	../CTFd/models.py	/^    name = db.Column(db.String(80))$/;"	kind:variable	line:46
-name	../CTFd/models.py	/^    name = db.Column(db.String(80))$/;"	kind:variable	line:86
-name	../CTFd/plugins/challenges/__init__.py	/^    name = "standard"$/;"	kind:variable	line:12
-name	../CTFd/plugins/challenges/__init__.py	/^    name = None$/;"	kind:variable	line:7
+name	../CTFd/models.py	/^    name = db.Column(db.String(128), unique=True)$/;"	kind:variable	line:152
+name	../CTFd/models.py	/^    name = db.Column(db.String(80))$/;"	kind:variable	line:349
+name	../CTFd/models.py	/^    name = db.Column(db.String(80))$/;"	kind:variable	line:45
+name	../CTFd/models.py	/^    name = db.Column(db.String(80))$/;"	kind:variable	line:90
+name	../CTFd/plugins/challenges/__init__.py	/^    name = "standard"$/;"	kind:variable	line:13
+name	../CTFd/plugins/challenges/__init__.py	/^    name = None$/;"	kind:variable	line:8
 name	../CTFd/plugins/keys/__init__.py	/^    name = "regex"$/;"	kind:variable	line:31
 name	../CTFd/plugins/keys/__init__.py	/^    name = "static"$/;"	kind:variable	line:17
 name	../CTFd/plugins/keys/__init__.py	/^    name = None$/;"	kind:variable	line:8
@@ -787,14 +805,14 @@ pack	../CTFd/models.py	/^from struct import unpack, pack, error as struct_error$
 page_not_found	../CTFd/utils.py	/^    def page_not_found(error):$/;"	kind:function	line:81
 pages	../CTFd/utils.py	/^def pages():$/;"	kind:function	line:172
 pages.py	../CTFd/admin/pages.py	1;"	kind:file	line:1
-password	../CTFd/models.py	/^    password = db.Column(db.String(128))$/;"	kind:variable	line:152
+password	../CTFd/models.py	/^    password = db.Column(db.String(128))$/;"	kind:variable	line:154
 patch	../tests/test_utils.py	/^from mock import patch$/;"	kind:namespace	line:8
-place	../CTFd/models.py	/^    def place(self, admin=False):$/;"	kind:member	line:196
+place	../CTFd/models.py	/^    def place(self, admin=False):$/;"	kind:member	line:217
 pool	../migrations/env.py	/^from sqlalchemy import engine_from_config, pool$/;"	kind:namespace	line:3
 populate.py	../populate.py	1;"	kind:file	line:1
 prevent_registration	../CTFd/views.py	/^            prevent_registration = utils.set_config('prevent_registration', None)$/;"	kind:variable	line:63
 process_revision_directives	../migrations/env.py	/^    def process_revision_directives(context, revision, directives):$/;"	kind:function	line:62
-profile	../CTFd/views.py	/^def profile():$/;"	kind:function	line:172
+profile	../CTFd/views.py	/^def profile():$/;"	kind:function	line:173
 quote	../CTFd/utils.py	/^from six.moves.urllib.parse import urlparse, urljoin, quote, unquote$/;"	kind:namespace	line:28
 random	../populate.py	/^import random$/;"	kind:namespace	line:6
 random_date	../populate.py	/^def random_date(start, end):$/;"	kind:function	line:210
@@ -840,6 +858,7 @@ request	../CTFd/admin/statistics.py	/^from flask import current_app as app, rend
 request	../CTFd/admin/teams.py	/^from flask import current_app as app, render_template, request, redirect, jsonify, url_for, Blueprint$/;"	kind:namespace	line:1
 request	../CTFd/auth.py	/^from flask import current_app as app, render_template, request, redirect, url_for, session, Blueprint$/;"	kind:namespace	line:6
 request	../CTFd/challenges.py	/^from flask import render_template, request, redirect, jsonify, url_for, session, Blueprint$/;"	kind:namespace	line:6
+request	../CTFd/plugins/gamble/__init__.py	/^from flask import request$/;"	kind:namespace	line:2
 request	../CTFd/scoreboard.py	/^from flask import render_template, jsonify, Blueprint, redirect, url_for, request$/;"	kind:namespace	line:1
 request	../CTFd/utils.py	/^from flask import current_app as app, request, redirect, url_for, session, render_template, abort$/;"	kind:namespace	line:24
 request	../CTFd/views.py	/^from flask import current_app as app, render_template, request, redirect, abort, jsonify, url_for, session, Blueprint, Response, send_file$/;"	kind:namespace	line:4
@@ -853,7 +872,7 @@ revision	../migrations/versions/cb3cfcc47e2f_base.py	/^revision = 'cb3cfcc47e2f'
 revision	../migrations/versions/cbf5620f8e15_removes_containers_table_in_favor_of_using_a_plugin_to_manage_containers.py	/^revision = 'cbf5620f8e15'$/;"	kind:variable	line:12
 revision	../migrations/versions/d6514ec92738_adding_max_attempts_to_challenges.py	/^revision = 'd6514ec92738'$/;"	kind:variable	line:13
 rmdir	../CTFd/utils.py	/^def rmdir(dir):$/;"	kind:function	line:509
-route	../CTFd/models.py	/^    route = db.Column(db.String(80), unique=True)$/;"	kind:variable	line:33
+route	../CTFd/models.py	/^    route = db.Column(db.String(80), unique=True)$/;"	kind:variable	line:32
 run_migrations_offline	../migrations/env.py	/^def run_migrations_offline():$/;"	kind:function	line:32
 run_migrations_online	../migrations/env.py	/^def run_migrations_online():$/;"	kind:function	line:51
 sa	../migrations/versions/1ec4a28fe0ff_change_solves_ip_to_string_and_add_ip_to_wrongkeys.py	/^import sqlalchemy as sa$/;"	kind:namespace	line:10
@@ -864,7 +883,7 @@ sa	../migrations/versions/cb3cfcc47e2f_base.py	/^import sqlalchemy as sa$/;"	kin
 sa	../migrations/versions/cbf5620f8e15_removes_containers_table_in_favor_of_using_a_plugin_to_manage_containers.py	/^import sqlalchemy as sa$/;"	kind:namespace	line:9
 sa	../migrations/versions/d6514ec92738_adding_max_attempts_to_challenges.py	/^import sqlalchemy as sa$/;"	kind:namespace	line:9
 safe_join	../CTFd/views.py	/^from flask.helpers import safe_join$/;"	kind:namespace	line:5
-score	../CTFd/models.py	/^    def score(self, admin=False):$/;"	kind:member	line:170
+score	../CTFd/models.py	/^    def score(self, admin=False):$/;"	kind:member	line:172
 scoreboard	../CTFd/__init__.py	/^        from CTFd.scoreboard import scoreboard$/;"	kind:namespace	line:114
 scoreboard	../CTFd/scoreboard.py	/^scoreboard = Blueprint('scoreboard', __name__)$/;"	kind:variable	line:8
 scoreboard.py	../CTFd/admin/scoreboard.py	1;"	kind:file	line:1
@@ -879,6 +898,7 @@ sendmail	../tests/test_utils.py	/^from CTFd.utils import get_config, set_config,
 serve.py	../serve.py	1;"	kind:file	line:1
 session	../CTFd/auth.py	/^from flask import current_app as app, render_template, request, redirect, url_for, session, Blueprint$/;"	kind:namespace	line:6
 session	../CTFd/challenges.py	/^from flask import render_template, request, redirect, jsonify, url_for, session, Blueprint$/;"	kind:namespace	line:6
+session	../CTFd/plugins/challenges/__init__.py	/^from flask import session$/;"	kind:namespace	line:3
 session	../CTFd/utils.py	/^from flask import current_app as app, request, redirect, url_for, session, render_template, abort$/;"	kind:namespace	line:24
 session	../CTFd/views.py	/^from flask import current_app as app, render_template, request, redirect, abort, jsonify, url_for, session, Blueprint, Response, send_file$/;"	kind:namespace	line:4
 sessionmaker	../migrations/versions/87733981ca0e_adds_challenge_types_and_uses_keys_table.py	/^from sqlalchemy.orm import sessionmaker$/;"	kind:namespace	line:12
@@ -894,7 +914,7 @@ six	../CTFd/utils.py	/^import six$/;"	kind:namespace	line:13
 six	../tests/test_utils.py	/^import six$/;"	kind:namespace	line:10
 smtplib	../CTFd/utils.py	/^import smtplib$/;"	kind:namespace	line:14
 socket	../CTFd/utils.py	/^import socket$/;"	kind:namespace	line:15
-solve	../CTFd/plugins/challenges/__init__.py	/^    def solve(chal, provided_key):$/;"	kind:member	line:15
+solve	../CTFd/plugins/challenges/__init__.py	/^    def solve(chal, provided_key):$/;"	kind:member	line:16
 solve	../populate.py	/^                    solve = Solves(x + 1, chalid, '127.0.0.1', gen_word())$/;"	kind:variable	line:263
 solves	../CTFd/challenges.py	/^def solves(teamid=None):$/;"	kind:function	line:163
 solves_per_chal	../CTFd/challenges.py	/^def solves_per_chal():$/;"	kind:function	line:143
@@ -910,16 +930,18 @@ sys	../export.py	/^import sys$/;"	kind:namespace	line:5
 sys	../import.py	/^import sys$/;"	kind:namespace	line:5
 table	../migrations/versions/1ec4a28fe0ff_change_solves_ip_to_string_and_add_ip_to_wrongkeys.py	/^from sqlalchemy.sql import text, table, column$/;"	kind:namespace	line:11
 table	../migrations/versions/87733981ca0e_adds_challenge_types_and_uses_keys_table.py	/^from sqlalchemy.sql import text, table, column$/;"	kind:namespace	line:11
-tag	../CTFd/models.py	/^    tag = db.Column(db.String(80))$/;"	kind:variable	line:109
+tag	../CTFd/models.py	/^    tag = db.Column(db.String(80))$/;"	kind:variable	line:111
 target_metadata	../migrations/env.py	/^target_metadata = current_app.extensions['migrate'].db.metadata$/;"	kind:variable	line:24
-team	../CTFd/models.py	/^    team = db.Column(db.Integer, db.ForeignKey('teams.id'))$/;"	kind:variable	line:302
-team	../CTFd/models.py	/^    team = db.relationship('Teams', foreign_keys="Solves.teamid", lazy='joined')$/;"	kind:variable	line:249
+team	../CTFd/models.py	/^    team = db.Column(db.Integer, db.ForeignKey('teams.id'))$/;"	kind:variable	line:323
+team	../CTFd/models.py	/^    team = db.relationship('Teams', foreign_keys="Gamble.teamid", lazy='joined')$/;"	kind:variable	line:357
+team	../CTFd/models.py	/^    team = db.relationship('Teams', foreign_keys="Solves.teamid", lazy='joined')$/;"	kind:variable	line:270
 team	../CTFd/views.py	/^def team(teamid):$/;"	kind:function	line:133
 team	../populate.py	/^                team = Teams(name, name.lower() + gen_email(), 'password')$/;"	kind:variable	line:247
-teamid	../CTFd/models.py	/^    teamid = db.Column(db.Integer, db.ForeignKey('teams.id'))$/;"	kind:variable	line:245
-teamid	../CTFd/models.py	/^    teamid = db.Column(db.Integer, db.ForeignKey('teams.id'))$/;"	kind:variable	line:267
-teamid	../CTFd/models.py	/^    teamid = db.Column(db.Integer, db.ForeignKey('teams.id'))$/;"	kind:variable	line:285
-teamid	../CTFd/models.py	/^    teamid = db.Column(db.Integer, db.ForeignKey('teams.id'))$/;"	kind:variable	line:85
+teamid	../CTFd/models.py	/^    teamid = db.Column(db.Integer, db.ForeignKey('teams.id'))    $/;"	kind:variable	line:348
+teamid	../CTFd/models.py	/^    teamid = db.Column(db.Integer, db.ForeignKey('teams.id'))$/;"	kind:variable	line:266
+teamid	../CTFd/models.py	/^    teamid = db.Column(db.Integer, db.ForeignKey('teams.id'))$/;"	kind:variable	line:288
+teamid	../CTFd/models.py	/^    teamid = db.Column(db.Integer, db.ForeignKey('teams.id'))$/;"	kind:variable	line:306
+teamid	../CTFd/models.py	/^    teamid = db.Column(db.Integer, db.ForeignKey('teams.id'))$/;"	kind:variable	line:89
 teams	../CTFd/views.py	/^def teams(page):$/;"	kind:function	line:116
 teams.py	../CTFd/admin/teams.py	1;"	kind:file	line:1
 tempfile	../CTFd/utils.py	/^import tempfile$/;"	kind:namespace	line:17
@@ -978,15 +1000,15 @@ test_verify_email	../tests/test_utils.py	/^def test_verify_email(mock_smtp):$/;"
 test_viewing_challenges	../tests/test_user_facing.py	/^def test_viewing_challenges():$/;"	kind:function	line:231
 text	../migrations/versions/1ec4a28fe0ff_change_solves_ip_to_string_and_add_ip_to_wrongkeys.py	/^from sqlalchemy.sql import text, table, column$/;"	kind:namespace	line:11
 text	../migrations/versions/87733981ca0e_adds_challenge_types_and_uses_keys_table.py	/^from sqlalchemy.sql import text, table, column$/;"	kind:namespace	line:11
-themes_handler	../CTFd/views.py	/^def themes_handler(theme, path):$/;"	kind:function	line:258
+themes_handler	../CTFd/views.py	/^def themes_handler(theme, path):$/;"	kind:function	line:259
 time	../CTFd/auth.py	/^import time$/;"	kind:namespace	line:4
 time	../CTFd/challenges.py	/^import time$/;"	kind:namespace	line:4
 time	../CTFd/utils.py	/^import time$/;"	kind:namespace	line:18
 topteams	../CTFd/scoreboard.py	/^def topteams(count):$/;"	kind:function	line:89
 tracker	../CTFd/utils.py	/^    def tracker():$/;"	kind:function	line:125
 tracking_table	../migrations/versions/1ec4a28fe0ff_change_solves_ip_to_string_and_add_ip_to_wrongkeys.py	/^tracking_table = table('tracking',$/;"	kind:variable	line:35
-type	../CTFd/models.py	/^    type = db.Column(db.Integer)$/;"	kind:variable	line:51
-type	../CTFd/models.py	/^    type = db.Column(db.Integer, default=0)$/;"	kind:variable	line:68
+type	../CTFd/models.py	/^    type = db.Column(db.Integer)$/;"	kind:variable	line:52
+type	../CTFd/models.py	/^    type = db.Column(db.Integer, default=0)$/;"	kind:variable	line:72
 unban	../CTFd/admin/teams.py	/^def unban(teamid):$/;"	kind:function	line:144
 union_all	../CTFd/models.py	/^from sqlalchemy.sql.expression import union_all$/;"	kind:namespace	line:11
 union_all	../CTFd/scoreboard.py	/^from sqlalchemy.sql.expression import union_all$/;"	kind:namespace	line:2
@@ -1031,26 +1053,27 @@ utils	../CTFd/admin/statistics.py	/^from CTFd import utils$/;"	kind:namespace	li
 utils	../CTFd/admin/teams.py	/^from CTFd import utils$/;"	kind:namespace	line:7
 utils	../CTFd/auth.py	/^from CTFd import utils$/;"	kind:namespace	line:11
 utils	../CTFd/challenges.py	/^from CTFd import utils$/;"	kind:namespace	line:13
-utils	../CTFd/plugins/gamble/__init__.py	/^from CTFd import utils$/;"	kind:namespace	line:8
+utils	../CTFd/plugins/gamble/__init__.py	/^from CTFd import utils$/;"	kind:namespace	line:9
 utils	../CTFd/scoreboard.py	/^from CTFd import utils$/;"	kind:namespace	line:6
 utils	../CTFd/views.py	/^from CTFd import utils$/;"	kind:namespace	line:11
 utils	../tests/test_user_facing.py	/^from CTFd import utils$/;"	kind:namespace	line:7
 utils.py	../CTFd/utils.py	1;"	kind:file	line:1
 validate_url	../CTFd/utils.py	/^def validate_url(url):$/;"	kind:function	line:519
-value	../CTFd/models.py	/^    value = db.Column(db.Integer)$/;"	kind:variable	line:49
-value	../CTFd/models.py	/^    value = db.Column(db.Integer)$/;"	kind:variable	line:92
-value	../CTFd/models.py	/^    value = db.Column(db.Text)$/;"	kind:variable	line:316
-verified	../CTFd/models.py	/^    verified = db.Column(db.Boolean, default=False)$/;"	kind:variable	line:158
+value	../CTFd/models.py	/^    value = db.Column(db.Integer)$/;"	kind:variable	line:48
+value	../CTFd/models.py	/^    value = db.Column(db.Integer)$/;"	kind:variable	line:94
+value	../CTFd/models.py	/^    value = db.Column(db.Integer, default=200)$/;"	kind:variable	line:353
+value	../CTFd/models.py	/^    value = db.Column(db.Text)$/;"	kind:variable	line:337
+verified	../CTFd/models.py	/^    verified = db.Column(db.Boolean, default=False)$/;"	kind:variable	line:160
 verify_email	../CTFd/utils.py	/^def verify_email(addr):$/;"	kind:function	line:498
 verify_email	../tests/test_utils.py	/^from CTFd.utils import get_config, set_config, override_template, sendmail, verify_email$/;"	kind:namespace	line:6
 verify_emails	../CTFd/views.py	/^            verify_emails = utils.set_config('verify_emails', None)$/;"	kind:variable	line:66
 view_after_ctf	../CTFd/utils.py	/^def view_after_ctf():$/;"	kind:function	line:224
 view_challenges_unregistered	../CTFd/views.py	/^            view_challenges_unregistered = utils.set_config('view_challenges_unregistered', None)$/;"	kind:variable	line:60
-view_gamble_shop	../CTFd/plugins/gamble/__init__.py	/^    def view_gamble_shop():$/;"	kind:function	line:27
+view_gamble_shop	../CTFd/plugins/gamble/__init__.py	/^    def view_gamble_shop():$/;"	kind:function	line:38
 views	../CTFd/__init__.py	/^        from CTFd.views import views$/;"	kind:namespace	line:112
 views	../CTFd/views.py	/^views = Blueprint('views', __name__)$/;"	kind:variable	line:13
 views.py	../CTFd/views.py	1;"	kind:file	line:1
-website	../CTFd/models.py	/^    website = db.Column(db.String(128))$/;"	kind:variable	line:153
+website	../CTFd/models.py	/^    website = db.Column(db.String(128))$/;"	kind:variable	line:155
 who_solved	../CTFd/challenges.py	/^def who_solved(chalid):$/;"	kind:function	line:237
 with_statement	../migrations/env.py	/^from __future__ import with_statement$/;"	kind:namespace	line:1
 word	../populate.py	/^            word = gen_word()$/;"	kind:variable	line:222
