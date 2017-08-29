@@ -1,4 +1,6 @@
 FROM python:2.7-alpine
+MAINTAINER Smaker <admin@smaker.kr>
+CMD echo 'Hello, CTFd'
 RUN apk update && \
     apk add python python-dev libffi-dev gcc make musl-dev py-pip mysql-client
 

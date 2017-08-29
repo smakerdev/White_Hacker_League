@@ -199,7 +199,7 @@ class Teams(db.Model):
     def gamble(self, admin=False):
         point = db.func.sum(Challenges.gamble_point).label('point')
         team = db.session.query(Solves.teamid, score).join(Teams).join(Challenges).filter(Teams.id == self.id)
-        award_score = db.func.sum(Awards.value).label('award_score')
+        award_score = db.func.sum(Awards.value).label('gamble')
         award = db.session.query(award_score).filter_by(teamid=self.id)
 
         team = team.group_by(Solves.teamid).first()

@@ -139,7 +139,7 @@ def team(teamid):
     solves = Solves.query.filter_by(teamid=teamid)
     awards = Awards.query.filter_by(teamid=teamid)
     gamble = Gamble.query.filter_by(teamid=teamid)
-    
+
     place = user.place()
     score = user.score()
 

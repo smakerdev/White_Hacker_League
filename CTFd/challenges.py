@@ -291,9 +291,15 @@ def chal(chalid):
             if status:  # The challenge plugin says the input is right
                 # TODO: if auth flag success, add gamble point
                 if utils.ctftime():
-                    # name = str(chalid) + " challenge gamble point"
+                    score = chal.value
+                    solved_problem = Solves.query.filter_by(teamid=session['id'], chalid=chalid).all().count()
+
                     solve = Solves(teamid=session['id'], chalid=chalid, ip=utils.get_ip(), flag=provided_key)
-                    gamble = Gamble(teamid=session['id'], chalid=chalid, value=chal.value)
+                    gamble = Gamble(teamid=session['id'], chalid=chalid, value=score)
+
+                    discount = (score * ((solved_problem * 10) / 100))
+                    result = score - discount
+                    awards = Awards(teamid=session['id'], name='discount score', value=result)
 
                     db.session.add(solve)
                     db.session.commit()
@@ -301,6 +307,9 @@ def chal(chalid):
                     db.session.add(gamble)
                     db.session.commit()
                     
+                    db.session.add(awards)
+                    db.session.commit()
+
                     db.session.close()
                 logger.info("[{0}] {1} submitted {2} with kpm {3} [CORRECT]".format(*data))
                 return jsonify({'status': 1, 'message': message})
@@ -333,3 +342,4 @@ def chal(chalid):
             'status': -1,
             'message': "You must be logged in to solve a challenge"
         })
+        
