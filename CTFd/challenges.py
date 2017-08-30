@@ -292,22 +292,29 @@ def chal(chalid):
                 # TODO: if auth flag success, add gamble point
                 if utils.ctftime():
                     score = chal.value
-                    solved_problem = Solves.query.filter_by(teamid=session['id'], chalid=chalid).all().count()
+                    solved_problem = Solves.query.filter_by(chalid=chalid).count()
 
                     solve = Solves(teamid=session['id'], chalid=chalid, ip=utils.get_ip(), flag=provided_key)
                     gamble = Gamble(teamid=session['id'], chalid=chalid, value=score)
 
-                    discount = (score * ((solved_problem * 10) / 100))
-                    result = score - discount
-                    awards = Awards(teamid=session['id'], name='discount score', value=result)
+                    result = - (score * ((solved_problem * 10) / 100))
+                    # awards = Awards(teamid=session['id'], name='discount score', value=int(result))
+
+                    print(solved_problem)
+                    print(result)
+
+                    teamid = session['id']
+                    name = "discount score"
+                    value = int(result)
+                    award = Awards(teamid, name, value)
+
+                    db.session.add(award)
+                    db.session.commit()
 
                     db.session.add(solve)
                     db.session.commit()
 
                     db.session.add(gamble)
-                    db.session.commit()
-                    
-                    db.session.add(awards)
                     db.session.commit()
 
                     db.session.close()
