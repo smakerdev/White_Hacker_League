@@ -138,7 +138,11 @@ def team(teamid):
     user = Teams.query.filter_by(id=teamid).first_or_404()
     solves = Solves.query.filter_by(teamid=teamid)
     awards = Awards.query.filter_by(teamid=teamid)
-    gamble = Gamble.query.filter_by(teamid=teamid)
+
+    points = Gamble.query.filter_by(teamid=teamid).all()
+    gamble = 0
+    for point in points:
+        gamble += point.value
 
     place = user.place()
     score = user.score()
@@ -148,6 +152,7 @@ def team(teamid):
         if teamid != session.get('id'):
             solves = solves.filter(Solves.date < freeze)
             awards = awards.filter(Awards.date < freeze)
+
 
     solves = solves.all()
     awards = awards.all()
@@ -161,7 +166,7 @@ def team(teamid):
         return render_template('team.html', team=user, errors=errors)
 
     if request.method == 'GET':
-        return render_template('team.html', solves=solves, awards=awards, team=user, score=score, place=place, score_frozen=utils.is_scoreboard_frozen())
+        return render_template('team.html', solves=solves, awards=awards, gamble=gamble, team=user, score=score, place=place, score_frozen=utils.is_scoreboard_frozen())
     elif request.method == 'POST':
         json = {'solves': []}
         for x in solves:

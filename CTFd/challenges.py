@@ -2,6 +2,7 @@ import json
 import logging
 import re
 import time
+import datetime
 
 from flask import render_template, request, redirect, jsonify, url_for, session, Blueprint
 from sqlalchemy.sql import or_
@@ -293,31 +294,58 @@ def chal(chalid):
                 if utils.ctftime():
                     score = chal.value
                     solved_problem = Solves.query.filter_by(chalid=chalid).count()
+                    solved_team = Solves.query.filter_by(chalid=chalid).all()
+
+                    challenge = Challenges.query.filter_by(id=chalid).first()
 
                     solve = Solves(teamid=session['id'], chalid=chalid, ip=utils.get_ip(), flag=provided_key)
                     gamble = Gamble(teamid=session['id'], chalid=chalid, value=score)
+                    gamble.name = "gamble point"
 
-                    result = - (score * ((solved_problem * 10) / 100))
-                    # awards = Awards(teamid=session['id'], name='discount score', value=int(result))
+                    result = (score * ((solved_problem * 10) / 100))
 
-                    print(solved_problem)
-                    print(result)
 
-                    teamid = session['id']
-                    name = "discount score"
-                    value = int(result)
-                    award = Awards(teamid, name, value)
+                    # Awards minus
 
-                    db.session.add(award)
-                    db.session.commit()
+                    # teamid = session['id']
+                    # name = "discount score"
+                    # value = int(result)
+                    # award = Awards(teamid, name, value)
 
-                    db.session.add(solve)
-                    db.session.commit()
 
-                    db.session.add(gamble)
-                    db.session.commit()
+                    failed=False
+                    try:
+                        if solved_problem >= 1:
+                            challenge.value -= result
+                            db.session.add(challenge)
+                            db.session.commit()
 
-                    db.session.close()
+                        # teamid = solved_team.teamid
+                        # name = "discount score"
+                        # value = int(result)
+
+
+                        # award2 = Awards(teamid, name, value)
+                        # db.session.add(award2)
+                        # db.session.commit()
+
+                    # db.session.add(award)
+                    # db.session.commit()
+
+
+                        db.session.add(solve)
+                        db.session.commit()
+
+                        db.session.add(gamble)
+                        db.session.commit()
+
+                        db.session.close()
+
+                    except Exception as e:
+                        db.session.rollback()
+                        db.session.flush()
+                        failed = True
+
                 logger.info("[{0}] {1} submitted {2} with kpm {3} [CORRECT]".format(*data))
                 return jsonify({'status': 1, 'message': message})
             else:  # The challenge plugin says the input is wrong
@@ -349,4 +377,3 @@ def chal(chalid):
             'status': -1,
             'message': "You must be logged in to solve a challenge"
         })
-        
