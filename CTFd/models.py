@@ -360,6 +360,10 @@ class Gamble(db.Model):
     team = db.relationship('Teams', foreign_keys="Gamble.teamid", lazy='joined')
     chal = db.relationship('Challenges', foreign_keys="Gamble.chalid", lazy='joined')
 
+    # def __init__(self, teamid, ue):
+    #     self.teamid = teamid
+    #     self.value = value
+
     def __init__(self, teamid, chalid, value):
         self.teamid = teamid
         self.chalid = chalid

@@ -7,7 +7,7 @@ from flask import current_app as app, render_template, request, redirect, url_fo
 from itsdangerous import TimedSerializer, BadTimeSignature, Signer, BadSignature
 from passlib.hash import bcrypt_sha256
 
-from CTFd.models import db, Teams
+from CTFd.models import db, Teams, Gamble
 from CTFd import utils
 
 auth = Blueprint('auth', __name__)
@@ -155,6 +155,11 @@ def register():
                 team = Teams(name, email.lower(), password)
                 db.session.add(team)
                 db.session.commit()
+
+                gamble = Gamble(team.id, 0, 200)
+                db.session.add(gamble)
+                db.session.commit()
+
                 db.session.flush()
 
                 session['username'] = team.name
