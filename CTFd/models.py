@@ -46,6 +46,8 @@ class Challenges(db.Model):
     description = db.Column(db.Text)
     max_attempts = db.Column(db.Integer, default=0)
     value = db.Column(db.Integer)
+    original_value = db.Column(db.Integer)
+
     #TODO: Why gamble_point field not found?
     # gamble_point = db.Column(db.Integer)
     category = db.Column(db.String(80))
@@ -54,10 +56,11 @@ class Challenges(db.Model):
     
     #TODO: __init__ Challenges Model gamble_point
     # def __init__(self, name, description, value, category, type=0, gamble_point):
-    def __init__(self, name, description, value, category, type=0):
+    def __init__(self, name, description, value, original_value, category, type=0):
         self.name = name
         self.description = description
         self.value = value
+        self.original_value = original_value
         self.category = category
         self.type = type
         # self.gamble_point = gamble_point

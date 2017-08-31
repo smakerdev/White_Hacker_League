@@ -225,7 +225,7 @@ def admin_create_chal():
         files = request.files.getlist('files[]')
 
         # Create challenge
-        chal = Challenges(request.form['name'], request.form['desc'], request.form['value'], request.form['category'], int(request.form['chaltype']))
+        chal = Challenges(request.form['name'], request.form['desc'], request.form['value'], request.form['value'], request.form['category'], int(request.form['chaltype']))
         if 'hidden' in request.form:
             chal.hidden = True
         else:

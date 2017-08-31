@@ -293,44 +293,29 @@ def chal(chalid):
                 # TODO: if auth flag success, add gamble point
                 if utils.ctftime():
                     score = chal.value
+                    original_score = chal.original_value
+
                     solved_problem = Solves.query.filter_by(chalid=chalid).count()
                     solved_team = Solves.query.filter_by(chalid=chalid).all()
 
                     challenge = Challenges.query.filter_by(id=chalid).first()
 
                     solve = Solves(teamid=session['id'], chalid=chalid, ip=utils.get_ip(), flag=provided_key)
-                    gamble = Gamble(teamid=session['id'], chalid=chalid, value=score)
+                    gamble = Gamble(teamid=session['id'], chalid=chalid, value=original_score)
                     gamble.name = "gamble point"
 
-                    result = (score * ((solved_problem * 10) / 100))
-
-
-                    # Awards minus
-
-                    # teamid = session['id']
-                    # name = "discount score"
-                    # value = int(result)
-                    # award = Awards(teamid, name, value)
-
+                    # result = (original_score * ((solved_problem * 10) / 100))
+                    result = (original_score * (1 / 10))
 
                     failed=False
                     try:
+                        if solved_problem == 0:
+                            challenge.original_value = score
+
                         if solved_problem >= 1:
                             challenge.value -= result
                             db.session.add(challenge)
                             db.session.commit()
-
-                        # teamid = solved_team.teamid
-                        # name = "discount score"
-                        # value = int(result)
-
-
-                        # award2 = Awards(teamid, name, value)
-                        # db.session.add(award2)
-                        # db.session.commit()
-
-                    # db.session.add(award)
-                    # db.session.commit()
 
 
                         db.session.add(solve)
