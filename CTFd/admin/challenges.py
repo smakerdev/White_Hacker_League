@@ -35,7 +35,7 @@ def admin_chals():
             solve_count = Solves.query.join(Teams, Solves.teamid == Teams.id).filter(
                 Solves.chalid == x[1], Teams.banned == False).count()
             if teams_with_points > 0:
-                percentage = (float(solve_count) / float(teams_with_points))
+                percentage = float(solve_count)
             else:
                 percentage = 0.0
 

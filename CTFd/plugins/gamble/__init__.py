@@ -30,10 +30,6 @@ def load(app):
 
         return render_template('page.html', content=gamble)
 
-    @app.route('/gamble/add', methods=['POST'])
-    def addGamble():
-        return render_template('page.html', content="")
-
     @app.route('/gamble/shop', methods=['GET, POST'])
     def view_gamble_shop():
         if request.methods == 'POST':

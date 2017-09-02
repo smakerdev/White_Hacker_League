@@ -362,3 +362,15 @@ def chal(chalid):
             'status': -1,
             'message': "You must be logged in to solve a challenge"
         })
+@challenges.route('/chal/gamble/add', methods=['GET'])
+def addGamble():
+    get_gamble = request.args.get('gamble')
+    get_teamid = request.args.get('teamid')
+    gamble = Gamble(teamid=get_teamid, chalid=0, value=get_gamble)
+
+    db.session.add(gamble)
+
+    db.session.commit()
+    db.session.close()
+
+    return render_template('page.html', contents="겜블 포인트 추가 성공")
