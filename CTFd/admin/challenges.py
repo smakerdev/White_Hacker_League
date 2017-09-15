@@ -35,12 +35,14 @@ def admin_chals():
             solve_count = Solves.query.join(Teams, Solves.teamid == Teams.id).filter(
                 Solves.chalid == x[1], Teams.banned == False).count()
             if teams_with_points > 0:
-                percentage = float(solve_count)
+                percentage = int(solve_count)
             else:
-                percentage = 0.0
+                percentage = 0
 
             type_class = CHALLENGE_CLASSES.get(x.type)
             type_name = type_class.name if type_class else None
+
+            print(percentage)
 
             json_data['game'].append({
                 'id': x.id,
